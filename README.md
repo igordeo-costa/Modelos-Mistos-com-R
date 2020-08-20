@@ -1,5 +1,6 @@
 # Programa do curso
-Ao final das aulas 1 e 2 você deverá ser capaz de:
+
+## Ao final das aulas 1 e 2 você deverá ser capaz de:
 - entender o que é uma regressão linear e como ela pode te ajudar a entender um modelo misto;
 - compreender os motivos pelos quais os modelos mistos têm sido amplamente adotados na psicolinguística em substituição à ANOVA;
 - definir a estrutura de efeitos aleatórios de um modelo misto com base no seu design experimental;
@@ -10,7 +11,7 @@ Ao final das aulas 1 e 2 você deverá ser capaz de:
 - saber aplicar uma transformação logarítmica a seus dados;
 - saber reportar os resultados de um modelo linear misto.
 
-# Ao final da aula 3 você deverá ser capaz de:
+## Ao final da aula 3 você deverá ser capaz de:
 - aplicar um modelo misto a um design que contenha dois fatores fixos;
 - compreender o que é uma interação entre fatores;
 - entender a lógica por trás dos contrastes básicos dos modelos mistos (dummy code);
@@ -18,26 +19,22 @@ Ao final das aulas 1 e 2 você deverá ser capaz de:
 - saber o que fazer quando seus dados não se adéquam aos pressupostos dos modelos mistos;
 - saber reportar seus resultados de modo adequado.
 
-# O que você vai precisar de tecnologia para fazer o curso
+# Recursos tecnológicos para o curso
 
-1. ter instalado o R, baixando-o [daqui](https://cran.r-project.org/);
+1. ter instalado o R, baixando-o [aqui](https://cran.r-project.org/);
 2. ter instalado o R Studio, baixando-o [aqui](https://rstudio.com/);
-3. caso você tenha acesso à internet na PUC, não precisa instalar mais nada.
+3. ter instalado os pacotes que usaremos no curso. São eles: ```lme4```; ```lattice```; ```dplyr```; ```tidyr```; ```afex```; ```ggplot2```; ```car```. Se você não sabe como instalar um pacote, basta, após os passos 1 e 2, abrir o R Studio e digitar no “Console” o comando ```install.packages(“nome do pacote entre aspas”)```. Após fazer isso, aperte “Enter” e aguarde a instalação. Veja na imagem da página seguinte o exemplo de instalação do pacote *lme4*. Você deve fazer o mesmo para todos os pacotes listados acima.
 
-Se você não tiver acesso à internet na PUC, deve instalar previamente os pacotes que usaremos no curso. São eles: ```lme4```; ```lattice```; ```dplyr```; ```tidyr```; ```afex```; ```ggplot2```; ```car```;
+4. Todos os arquivos que usaremos estão disponíveis neste repositório
 
-Se você não sabe como instalar um pacote, basta, após os passos 1 e 2, abrir o R Studio e digitar no “Console” o comando ```install.packages```(“nome do pacote entre aspas”). Após fazer isso, aperte “Enter” e aguarde a instalação. Veja na imagem da página seguinte o exemplo de instalação do pacote *lme4*. Você deve fazer o mesmo para todos os pacotes listados acima. Feito isso, você pode fechar o R Studio e aguardar ansiosamente pelas aulas.
-
-4. Todos os arquivos que usaremos estão na pasta do Dropbox chamada “CURSO PUC-Rio”, a que você deve ter acesso. Mas, se você está lendo isso, é provável que já saiba de que pasta estamos falando.
-
-# Quanto à organização da pasta do curso
-Na pasta do nosso curso você vai encontrar esse arquivo que você agora está lendo e 5 subpastas. Vamos explicar cada uma delas para você não ficar perdido.
+# Quanto à organização deste repositório
+Na pasta do nosso curso você vai encontrar este arquivo que você agora está lendo (```README.md```) e 5 subpastas. Vamos explicar cada uma delas para você não ficar perdido.
 
 - Nas pastas Aula 0, Aula 1 e 2 e Aula 3:
-Você terá os arquivos que serão usados no curso. Arquivos do tipo .xlsx (Excel), .csv (Excel e R) e .R (esses são os scripts, arquivos que contêm comandos executáveis pelo R).
+Você terá os arquivos que serão usados no curso. Arquivos do tipo .xlsx (Excel), .csv (Excel e R) e .R (esses são os ```scripts```, arquivos que contêm comandos executáveis pelo R).
 
-Na pasta exercício:
-Você terá arquivos .csv a serem usados no exercício; e dois scripts, incluindo um protocolo de execução de modelos mistos.
+- Na pasta exercício:
+Você terá arquivos .csv a serem usados no exercício; e dois ```scripts```, incluindo um protocolo de execução de modelos mistos.
 
 - Na pasta leituras:
 Você terá um conjunto de arquivos .doc e .pdf com a apostila do curso, artigos acadêmicos relevantes e um livro básico de estatística (com mais de 700 páginas e muito didático para o qual você deveria dedicar alguma atenção em algum momento).

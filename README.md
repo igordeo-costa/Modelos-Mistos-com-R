@@ -14,7 +14,7 @@
 ## Ao final da aula 3 você deverá ser capaz de:
 - aplicar um modelo misto a um design que contenha dois fatores fixos;
 - compreender o que é uma interação entre fatores;
-- entender a lógica por trás dos contrastes básicos dos modelos mistos (dummy code);
+- entender a lógica por trás dos contrastes básicos dos modelos mistos (*dummy code*);
 - saber mudar o fator que é modelado no intercepto de um modelo misto;
 - saber o que fazer quando seus dados não se adéquam aos pressupostos dos modelos mistos;
 - saber reportar seus resultados de modo adequado.
@@ -30,42 +30,35 @@
 # Quanto à organização deste repositório
 Na pasta do nosso curso você vai encontrar este arquivo que você agora está lendo (```README.md```) e 5 subpastas. Vamos explicar cada uma delas para você não ficar perdido.
 
-- Nas pastas Aula 0, Aula 1 e 2 e Aula 3:
-Você terá os arquivos que serão usados no curso. Arquivos do tipo .xlsx (Excel), .csv (Excel e R) e .R (esses são os ```scripts```, arquivos que contêm comandos executáveis pelo R).
+- Nas pastas Aula 0, Aula 1 e 2 e Aula 3: Você terá os arquivos que serão usados no curso. Arquivos do tipo ```.xlsx``` (Excel), ```.csv``` (Excel e R) e ```.R``` (esses são os ```scripts```, arquivos que contêm comandos executáveis pelo R).
 
-- Na pasta exercício:
-Você terá arquivos .csv a serem usados no exercício; e dois ```scripts```, incluindo um protocolo de execução de modelos mistos.
+- Na pasta exercício: Você terá arquivos ```.csv``` a serem usados no exercício; e dois ```scripts```, incluindo um protocolo de execução de modelos mistos.
 
-- Na pasta leituras:
-Você terá um conjunto de arquivos .doc e .pdf com a apostila do curso, artigos acadêmicos relevantes e um livro básico de estatística (com mais de 700 páginas e muito didático para o qual você deveria dedicar alguma atenção em algum momento).
+- Na pasta leituras: Você terá um conjunto de arquivos ```.doc``` e ```.pdf``` com a apostila do curso e artigos acadêmicos relevantes.
 
-- Sugestões quanto à ordem das leituras
-Todo o material de leitura está na pasta do curso. Sugerimos ao leitor que siga as recomendações e ordem abaixo para facilitar o entendimento.
+- Sugestões quanto à ordem das leituras: Todo o material de leitura está na pasta do curso. Sugerimos ao leitor que siga as recomendações e ordem abaixo para facilitar o entendimento.
 
 1. Apostila:
-(i) Se você não sabe nada de estatística, recomendamos começar do início: estatística descritiva;
-(ii) Se você não sabe o que são Erro padrão, Intervalo de Confiança e ANOVA, mas sabe sobre estatística descritiva, recomendados começar por: estatística inferencial;
-(iii) Se você já sabe sobre estatística inferencial, mas não sabe a diferença entre efeitos fixos e aleatórios, recomendamos: seções 3.3.1. Fatores fixos e fatores aleatórios; e 3.3.2. Itens como fatores aleatórios.
+- Se você não sabe nada de estatística, recomendamos começar do início: estatística descritiva;
+- Se você não sabe o que são Erro padrão, Intervalo de Confiança e ANOVA, mas sabe sobre estatística descritiva, recomendados começar por: estatística inferencial;
+- Se você já sabe sobre estatística inferencial, mas não sabe a diferença entre efeitos fixos e aleatórios, recomendamos: seções 3.3.1. Fatores fixos e fatores aleatórios; e 3.3.2. Itens como fatores aleatórios.
 
 2. Sobre falácia da língua como efeito fixo:
-(i) anexo da dissertação de Costa (2013);
-(ii) Raaijmakers (2003);
-(iii) Os textos que estão na pasta “Falácia da língua como efeito fixo”.
+- anexo da dissertação de Costa (2013);
+- Raaijmakers (2003);
+- Os textos que estão na pasta “Falácia da língua como efeito fixo”.
 
-2.1. Os textos na pasta:
-(i) Clark (1974) é a obra fundamental que coloca o problema e as soluções clássicas;
-(ii) Baayen et. al. (2008) e Jaeger (2008) são os textos que introduzem os modelos mistos na área da psicolinguística;
-(iii) Jaeger (2008) trata dos modelos logísticos, sobre os quais não falaremos nesse curso.
+## Os textos na pasta são:
+- Clark (1974) é a obra fundamental que coloca o problema e as soluções clássicas;
+- Baayen et. al. (2008) e Jaeger (2008) são os textos que introduzem os modelos mistos na área da psicolinguística;
+- Jaeger (2008) trata dos modelos logísticos, sobre os quais não falaremos nesse curso.
 
 3. Outras leituras:
-(i) Sobre diagnósticos: Zuur et. al. (2010);
-(ii) Sobre transformação de dados temporais: Baayen & Millin (2010);
-(iii) Sobre manter o modelo máximo: Barr et. al. (2013).
+- Sobre diagnósticos: Zuur et. al. (2010);
+- Sobre transformação de dados temporais: Baayen & Millin (2010);
+- Sobre manter o modelo máximo: Barr et. al. (2013).
 
-4. Um livrão para tirar suas dúvidas básicas de modo palatável:
-(i) Howell (2010).
-
-Recomendações quanto à Aula 0
+# Recomendações quanto à Aula 0
 Se você quiser -- e tiver tempo -- recomendamos que faça a Aula 0 em casa, antes de o curso começar. Se você quiser fazer isso (e não sabe nada de R), basta seguir os seguintes passos:
 
 1. Abra o R Studio;

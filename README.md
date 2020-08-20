@@ -38,12 +38,12 @@ Na pasta do nosso curso você vai encontrar este arquivo que você agora está l
 
 - Sugestões quanto à ordem das leituras: Todo o material de leitura está na pasta do curso. Sugerimos ao leitor que siga as recomendações e ordem abaixo para facilitar o entendimento.
 
-1. Apostila:
+### Apostila:
 - Se você não sabe nada de estatística, recomendamos começar do início: estatística descritiva;
 - Se você não sabe o que são Erro padrão, Intervalo de Confiança e ANOVA, mas sabe sobre estatística descritiva, recomendados começar por: estatística inferencial;
 - Se você já sabe sobre estatística inferencial, mas não sabe a diferença entre efeitos fixos e aleatórios, recomendamos: seções 3.3.1. Fatores fixos e fatores aleatórios; e 3.3.2. Itens como fatores aleatórios.
 
-2. Sobre falácia da língua como efeito fixo:
+### Sobre falácia da língua como efeito fixo:
 - anexo da dissertação de Costa (2013);
 - Raaijmakers (2003);
 - Os textos que estão na pasta “Falácia da língua como efeito fixo”.

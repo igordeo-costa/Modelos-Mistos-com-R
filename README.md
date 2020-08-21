@@ -1,5 +1,23 @@
 # Programa do curso
 
+# Aula 0
+## Parte 1
+- Usando o R como uma calculadora;
+- Criando objetos e tipos de objetos;
+- Usando a função concatenar para criar vetores.
+
+## Parte 2
+- Setar um diretório de trabalho;
+- Importar um arquivo .csv;
+- Investigar as propriedades de um data.frame;
+- Mudar os nomes das colunas em um data.frame;
+- Fazer um subset de um data.frame.
+
+## Parte 3:
+- Fazer resumos das propriedades estatísticas dos dados em um data.frame;
+- Visualizar os dados de um data.frame com um boxplot.
+
+
 ## Ao final das aulas 1 e 2 você deverá ser capaz de:
 - entender o que é uma regressão linear e como ela pode te ajudar a entender um modelo misto;
 - compreender os motivos pelos quais os modelos mistos têm sido amplamente adotados na psicolinguística em substituição à ANOVA;

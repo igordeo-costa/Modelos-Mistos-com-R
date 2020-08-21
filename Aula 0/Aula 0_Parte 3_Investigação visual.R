@@ -1,4 +1,4 @@
-# Parte 3: Compreendendo os dados do seu data frame ANTES de aplicar qualquer modelo
+# Aula 0 - Parte 3: Sumarizando dados do seu data frame
 
 # Vamos continuar trabalhando com o objeto "x", ou seja, com a tabela "Populações Fictícias.csv"
 # Se não estiver carregada, carregue-a!
@@ -23,14 +23,6 @@ min(x$popA)
 max(x$popA)
 
 mean(x$popA)
-
-# ESSA PARTE É UMA COMPLEMENTAÇÃO AO TEXTO: "Apostila.docx", disponível na pasta do curso.
-
-# (A) MEDIDAS DA TENDÊNCIA CENTRAL: média (mean) e mediana (median)
-
-# (B) QUANTIS E QUARTIS
-
-# (C) MEDIDAS DE DISPERSÃO: Desvios, desvio médio, variância, desvio padrão
 
 # Agora que você já entendeu tudo isso, você pode começar a valorizar mais a função summary().
 # Ela te dá os mais relevantes desses resultados de uma vez só e de modo muito rápido.
@@ -58,25 +50,35 @@ boxplot(x$popA, x$popB)
 
 # Vamos usar a função sample() para fazer duas amostras aleatórias:
 
-amostra.popA=sample(x$popA, 15) # amostrar aleatoriamente 15 indivíduos de popA
-amostra.popB=sample(x$popB, 15) # o mesmo para popB.
+a.popA=sample(x$popA, 15) # amostrar aleatoriamente 15 indivíduos de popA
+a.popB=sample(x$popB, 15) # o mesmo para popB.
 
-# Agora vamos juntar em um único vetor amostra.popA e amostra.popB usando c() --> concatenar
+# Agora vamos juntar em um único vetor a.popA e a.popB usando a função concatenar: c()
 
-Amostras=c(amostra.popA, amostra.popB)
+am=c(a.popA, a.popB)
 
 # Agora vamos criar um vetor (função concatenar) que contenha a letra "A" repetida 15 vezes e a letra "B" repetida 15 vezes.
 # Vamos usar a função rep()
 
-População=c(rep("A", 15), rep("B", 15))
+# Faça primeiro assim:
 
-# Agora vamos juntar em um data frame o vetor População e o vetor Amostras:
+rep("A", 15)
 
-Amostragem=data.frame(População, Amostras)
+rep("B", 15)
+
+# Viu o que essa função faz?
+
+# Agora o que fizemos abaixo faz mais sentido para você, não?
+
+pop=c(rep("A", 15), rep("B", 15))
+
+# Agora vamos juntar em um data frame o vetor "pop" e o vetor "am":
+
+dados=data.frame(pop, am)
 
 # Agora vamos ver o que o R fez:
 
-Amostragem
+dados
 
 # No data frame original (x), população A e B estavam em colunas diferentes, daí fizemos o boxplot assim:
 
@@ -90,16 +92,18 @@ boxplot(x$popA, x$popB)
 
 # Tente plotar um boxplot desse modo e veja o que ocorre:
 
-boxplot(Amostragem$População, Amostragem$Amostras)
+boxplot(dados$pop, dados$am)
 
 # Ele plotou 2 boxplots, mas um está "zerado".
 # O jeito correto de plotar o boxplot para esse data frame seria: 
 
-boxplot(Amostragem$Amostras~Amostragem$População)
+boxplot(dados$am~dados$pop)
 
-# Avisar à função boxplot que você deseja plotar a coluna Amostras ($Amostras)
-# em função de (~) coluna População ($População).
+# Avisar à função boxplot que você deseja plotar a coluna "am" ($am)
+# em função da (~) coluna "pop" ($pop).
 
 # Ou, se você não gosta do símbolo $, assim:
 
-boxplot(Amostras~População, data=Amostragem)
+boxplot(am~pop, data=dados) # leia-se: plotar um boxplot de am em função de pop, colunas do data frame de nome "dados"
+
+

@@ -1,32 +1,31 @@
-# Parte 1: Importando arquivos .csv para o R
-# (A) revisando o básico:
-  
+# Aula 0 - Parte 1: Uma introdução básica ao R
+
 # (1) Usando o R como uma calculadora:
 
-1+3 #soma
+1+3 # soma
  
-5-2 #subtração
+5-2 # subtração
 
-16/2 #divisão
+16/2 # divisão
 
-3*5 #multiplicação
+3*5 # multiplicação
 
-9^2 #potenciação
+9^2 # potenciação
 
 # etc. etc. etc.
 
-#(2) Criando um "objeto" do R
+# (2) Criando um "objeto" do R
 # O ideal no R é criar objetos e atribuir a eles certas propriedades:
 
-a=5+7+9+15+397 # O objeto "a" contém a soma depois do sinal de "=";
-b=6-9+13+25 # O objeto "b" contém a operação depois do sinal de "=".
+a=5+7+9+15+397 # O objeto "a" recebe a soma depois do sinal de "=";
+b=6-9+13+25 # O objeto "b" recebe a operação depois do sinal de "=".
 
 # Observe que, ao "rodar" os objetos "a" e "b", nada parece acontecer.
 # Na verdade, o R já fez a conta "encobertamente", apenas não a mostrou para você.
 # Se você quiser vê-la, basta "imprimir" o objeto na tela, digitando o nome dele:
 
-a
-b
+a # imprime na tela o objeto "a"
+b # imprime na tela o objeto "b"
   
 # Com isso, agora você pode manipular os objetos "a" e "b", realizando operações entre eles:
 
@@ -44,30 +43,34 @@ y= (a+b)*b+a
 
 # OBS: objetos podem ser criados com o operador "=" ou com o operador "<-".
 
-z=500/2
+z=500/2 # É lido como: o objeto "z" recebe o resultado da operação 500 divido por 2.
 
 # é a mesma coisa que:
 
-z<-500/2
+z<-500/2 
+
+#---------
+# Comentário importante: o sinal de "=" no R é um comando executável, um operador para criar objetos;
+# O sinal matemático de igualdade no R é "==" (dois sinais de igual seguidos).
+#---------
 
 # Crianco objetos com a função "concatenar":
+# c()
 
-c()
-
-z=c(1,2,3,4,5) # Cria o objeto z que contém os números de 1 a 5.
+z=c(1,2,3,4,5) # Cria o objeto z que recebe os números de 1 a 5.
 w=c("a", "b", "c", "d", "e") # Cria o objeto w que contém as letras de "a" a "e".
 k=c(569.2, 326.5, 297.47, 624.1, 358.4)
 
-# Os objetos formados pela função C() são chamados de "vetores" e permitem manipulações
+# Os objetos formados pela função c() são chamados de "vetores" e permitem manipulações
 # como os objetos mais básicos:
 
-z*k #Multiplicar z por k. Fique atento aos resultados!!!
+z*k # Multiplicar z por k. Fique atento aos resultados!!!
 
-#Agora tente fazer o mesmo com z e w:
+# Agora tente fazer o mesmo com z e w:
 
 z*w
 
-#Você provavelmente obteve a resposta abaixo:
+# Você provavelmente obteve a resposta abaixo:
 
 #--------------------------------------------------------------
 # Error in z * w : non-numeric argument to binary operator
@@ -82,9 +85,13 @@ z*w
 # numeric: número inteiro e fracionário (236.5, 15.2, 794.654798123, etc.)
 
 # character: letra ou palavra ("a", "A irmã do João", "2+321", etc.)
+# Repare que objetos do tipo character são criados colocados aspas duplas antes e depois do elemento
+# que se quer definir como um character. Assim:
+
+num=2+321 # cria um objeto numérico
+str="2+321" # cria um objeto do tipo character
 
 # logical: um valor lógico binário (TRUE ou FALSE).
-
 
 # Para saber se um objeto é de um desses tipos, basta usar uma das funções abaixo: 
 
@@ -94,6 +101,7 @@ z*w
 # is.character()
 # is.logical()
 #--------------
+
 # Agora podemos entender por que o R não fez a multiplicação z*W:
 
 is.numeric(z)
@@ -117,7 +125,7 @@ is.character(w)
 # Vamos passar os vetores z, w e k como argumentos da função data.frame:
 # Vamos dar o nome de "dados" a esse data frame:
 
-dados=data.frame(z, w, k)
+dados=data.frame(z, w, k) # o objeto "dados" recebe o data frame criado com os objetos z, w e k.
 
 # Agora imprima na tela o objeto "dados":
 
@@ -128,6 +136,7 @@ dados
 # Mas isso não é importante agora.
 
 # Vamos a uma última manipulação:
+
 # Crie o objeto f como abaixo:
 
 f=c("A1","A2","A3","A4")
@@ -151,7 +160,12 @@ dados2=data.frame(z, w, k, f)
 f=c("A1","A2","A3","A4", NA)
 
 # Agora refaça o data frame "dados2"
+
+dados2=data.frame(z, w, k, f)
+
 # E imprima-o na tela:
+
+dados2
 
 # Mas o que é o NA? Vamos perguntar para o R:
 
@@ -159,3 +173,8 @@ f=c("A1","A2","A3","A4", NA)
 
 # Sempre que houver alguma dúvida sobre uma função do R, você pode usar o ponto de interrogação
 # seguido da função para obter ajuda.
+
+# NA ("Not Available/Missing Values") é o valor que usamos quando queremos deixar um "lugar vazio".
+
+# Por enquanto é só!
+# Vamos para a parte 2, em que aprenderemos como importar dados para o R.

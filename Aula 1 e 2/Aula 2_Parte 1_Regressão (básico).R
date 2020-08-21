@@ -1,5 +1,4 @@
-# Aula 2: Os pressupostos dos modelos mistos
-# Parte 2: O básico sobre regressão.
+# Aula 1 - Parte 1: O básico sobre regressão.
 
 #-------
 # ANOVA
@@ -11,7 +10,7 @@
 
 first=read.csv(file.choose())
 
-# Vamos investigar a tabela
+# Vamos investigar a tabela:
 
 head(first)
 
@@ -20,24 +19,17 @@ str(first)
 # Ela apresenta:
 # 1 coluna com os sujeitos;
 # 1 coluna com as condições (multiple e single);
-# 4 colunas com as respostas de cada sujeito para cada um dos 4 itens (X10, X7, X8 3 X9).
+# 4 colunas com as respostas de cada sujeito para cada um dos 4 itens (X10, X7, X8 e X9).
 # O que está sendo medido é o tempo para a primeira fixação num experimento de rastreamento
 # ocular.
 
 # Observe que essa tabela está no formato horizontal (wide).
 # Precisamos, então, tranformá-la para o formato vertical.
 
-# Mas antes, vamos fazer umas mudanças nos nomes das colunas:
-
-first=edit(first)
-
+# Mas antes, vamos fazer umas mudanças nos nomes das colunas.
 # Nomeie as colunas da seguinte forma: "suj", "cond", "A", "B", "C", "D".
 
-#-----------------------
-# Se você quiser fazer isso com um código, também pode:
-
 colnames(first)=c("suj", "cond", "A", "B", "C", "D")
-#-----------------------
 
 # Visualize mais uma vez sua tabela:
 
@@ -47,6 +39,12 @@ head(first)
 
 require(tidyr)
 
+#----------
+# Se você não tiver esse pacote, precisa instalá-lo:
+
+install.packages("tydir")
+#----------
+
 # Agora sim vem a mágica!
 # Nós vamos usar a função gather()
 # Com ela, nós vamos criar duas novas colunas a partir de 4.
@@ -55,6 +53,9 @@ require(tidyr)
 # E distribuídos adequadamente para sujeitos e condições.
 
 long=gather(first, itens, tempo, A:D)
+
+# perceba que "tempo" e "itens" foram nomes que acabamos de inventar; eles poderiam ser quaisquer nomes:
+# "x" e "y"; "pranchas" e "fixação", etc.
 
 # Vamos inspecionar a estrutura desse data.frame
 
@@ -67,14 +68,13 @@ str(long)
 long$itens=as.factor(long$itens)
 long$suj=as.factor(long$suj)
 
-# Verifiquemos mais uma vez a estrutura
+# Verifiquemos mais uma vez a estrutura:
 
 str(long)
 
 # Como no trabalho original os autores apresentaram uma ANOVA, vamos calculá-la:
 # Vamos modelar o tempo em função do tipo de condição: single ou multiple.
 
-  
 mod.anova=aov(tempo~cond, data=long)
 
 #-----------------------------------------------------------------------------------
@@ -83,12 +83,6 @@ mod.anova=aov(tempo~cond, data=long)
 # visto que ela não incorpora a variabilidade devida aos sujeitos e aos itens,
 # mas como ainda não discutimos "efeitos aleatórios", vamos mantê-la assim para fins
 # didáticos.
-
-# O modo "correto" para esse design, em que sujeitos são between fatores, mas itens
-# within, deveria ser roda uma ANOVA para cada (F1 e F2):
-
-f1=aov(tempo~cond + Error(suj), data=long)
-f2=aov(tempo~cond + Error(itens), data=long)
 #------------------------------------------------------------------------------------
 
 #----------------------------------------------------------------
@@ -108,7 +102,7 @@ f2=aov(tempo~cond + Error(itens), data=long)
 summary(mod.anova)
 
 # Aqui temos a clássica tabela da Análise de Variância
-# E um resultado altamente significativo para "cond"
+# E um resultado significativo para "cond"
 # Mas qual condição é mais lenta/rápida, single ou multiple?!
 # A ANOVA não nos dá. Ela apenas diz que há uma diferença sigificativa entre as amostras.
 # Mas nós podemos conseguir diretamente da nossa tabela de dados.
@@ -128,6 +122,10 @@ aggregate(long$tempo, by=list(long$cond), mean)
 # Se você quiser, pode visualizar os dados com um boxplot:
 
 boxplot(tempo~cond, data=long)
+
+# Outro comentário importante: se estivéssemos aplicando um modelo "pra valer", e não apenas
+# dando um exemplo didático, deveríamos aqui testar os pressupostos do nosso modelo. Vamos ignorar
+# essa etapa por enquanto.
 
 #----------------------------
 # REGRESSÃO COM MODELO MISTO

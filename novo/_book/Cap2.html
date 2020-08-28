@@ -1,0 +1,513 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.2. Primeiros passos com o R · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Cap3.html" />
+    
+    
+    <link rel="prev" href="Cap1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Apresentação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Cap1.html">
+            
+                <a href="Cap1.html">
+            
+                    
+                    1. CONHECENDO O R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Cap1.html">
+            
+                <a href="Cap1.html">
+            
+                    
+                    1.1. Instalando o R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="Cap2.html">
+            
+                <a href="Cap2.html">
+            
+                    
+                    1.2. Primeiros passos com o R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cap3.html">
+            
+                <a href="Cap3.html">
+            
+                    
+                    1.3. Manipulando tabelas de dados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Cap4.html">
+            
+                <a href="Cap4.html">
+            
+                    
+                    1.4. Investigando tabelas de dados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Cap5.html">
+            
+                <a href="Cap5.html">
+            
+                    
+                    2. MODELOS DE REGRESSÃO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Cap5.html">
+            
+                <a href="Cap5.html">
+            
+                    
+                    2.1. O básico sobre regressão
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Cap6.html">
+            
+                <a href="Cap6.html">
+            
+                    
+                    2.2. Fatores aleatórios e modelos mistos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Cap7.html">
+            
+                <a href="Cap7.html">
+            
+                    
+                    2.3. Checando os pressupostos do modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Cap8.html">
+            
+                <a href="Cap8.html">
+            
+                    
+                    2.4. Reportando seu modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Cap9.html">
+            
+                <a href="Cap9.html">
+            
+                    
+                    3. MODELOS COM DUAS VARIÁVEIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Cap9.html">
+            
+                <a href="Cap9.html">
+            
+                    
+                    3.1. Modelo com duas variáveis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Cap10.html">
+            
+                <a href="Cap10.html">
+            
+                    
+                    3.2. Diagnósticos do modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Cap11.html">
+            
+                <a href="Cap11.html">
+            
+                    
+                    3.3. Investigando os efeitos aleatórios
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >1.2. Primeiros passos com o R</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="primeiros-passos-com-o-r">Primeiros passos com o R</h1>
+<p>Nesta parte do nosso curso, nosso objetivo &#xE9; apenas apresentar o R para aqueles que nunca lidaram com ele e t&#xEA;m nenhum conhecimento de programa&#xE7;&#xE3;o. Se voc&#xEA; jamais abriu uma linha de comando na vida, &#xE9; preciso que voc&#xEA; entenda a l&#xF3;gica por detr&#xE1;s desse tipo de pr&#xE1;tica. Al&#xE9;m disso, voc&#xEA; precisar&#xE1; entender a l&#xF3;gica que subjaz aos objetos do R, da&#xED; essa parte ser importante para os totalmente iniciantes.</p>
+<p>Vamos come&#xE7;ar avisando que tudo que estiver sendo apresentado</p>
+<pre><code>Nesse formato
+</code></pre><p>&#xE9; um c&#xF3;digo execut&#xE1;vel, ou seja, um comando para o R fazer algo. Como j&#xE1; avisamos antes, a &#xFA;nica exce&#xE7;&#xE3;o &#xE9; para os trechos precedidos de cerquilha/hashtag (<code>#</code>), que s&#xE3;o apenas coment&#xE1;rios para voc&#xEA;. O R n&#xE3;o estar&#xE1; lendo esses trechos e tentando executar nada. Assim:</p>
+<pre><code>Isso estar&#xE1; sendo executado, # mas isso aqui n&#xE3;o.
+</code></pre><p>Uma dica importante &#xE9;: tente acostumar-se a escrever os comandos em vez de copi&#xE1;-los ou de execut&#xE1;-los direto do <code>script</code>. Isso provavelmente ajudar&#xE1; voc&#xEA; a memoriz&#xE1;-los. Ent&#xE3;o, vamos come&#xE7;ar!</p>
+<h2 id="usando-o-r-como-uma-calculadora">Usando o R como uma calculadora:</h2>
+<pre><code>1+3 # soma
+
+5-2 # subtra&#xE7;&#xE3;o
+
+16/2 # divis&#xE3;o
+
+3*5 # multiplica&#xE7;&#xE3;o
+
+9^2 # potencia&#xE7;&#xE3;o
+</code></pre><p>etc. etc. etc.</p>
+<h2 id="criando-um-objeto-do-r">Criando um &quot;objeto&quot; do R</h2>
+<p>O ideal no R &#xE9; criar objetos e atribuir a eles certas propriedades:</p>
+<pre><code>a=5+7+9+15+397
+b=6-9+13+25
+</code></pre><ul>
+<li>O objeto &quot;a&quot; recebe a soma depois do sinal de <code>=</code>;</li>
+<li>O objeto &quot;b&quot; recebe a opera&#xE7;&#xE3;o depois do sinal de <code>=</code>.</li>
+</ul>
+<p>Observe que, ao &quot;rodar&quot; os objetos <code>a</code> e <code>b</code>, nada parece acontecer. Na verdade, o R j&#xE1; fez a conta &quot;encobertamente&quot;, apenas n&#xE3;o a mostrou para voc&#xEA;. Se voc&#xEA; quiser v&#xEA;-la, basta &quot;imprimir&quot; o objeto na tela, digitando o nome dele:</p>
+<pre><code>a # imprime na tela o objeto &quot;a&quot;
+b # imprime na tela o objeto &quot;b&quot;
+</code></pre><p>Com isso, agora voc&#xEA; pode manipular os objetos <code>a</code> e <code>b</code>, realizando opera&#xE7;&#xF5;es entre eles:</p>
+<pre><code>a+b
+a/b
+a^b # &quot;a&quot; elevado a &quot;b&quot;
+log(a^b) #logaritmo natural de &quot;a&quot; elevado a &quot;b&quot;
+sqrt(a+b*(b+a)) # raiz quadrada de a+b*(b+a)
+</code></pre><p>Lembre-se de que as regras para as opera&#xE7;&#xF5;es matem&#xE1;ticas continuam valendo, como a coloca&#xE7;&#xE3;o de par&#xEA;nteses: Observe a diferen&#xE7;a entre os objetos <code>x</code> e <code>y</code>:</p>
+<pre><code>x=(a+b)*(b+a)
+y= (a+b)*b+a
+</code></pre><p>OBS: objetos podem ser criados com o operador <code>=</code> ou com o operador <code>&lt;-</code>.</p>
+<pre><code>z=500/2
+</code></pre><p>&#xC9; lido como: o objeto <code>z</code> recebe o resultado da opera&#xE7;&#xE3;o <code>500 divido por 2</code>. E &#xE9;  a mesma coisa que:</p>
+<pre><code>z&lt;-500/2
+</code></pre><p>Coment&#xE1;rio importante: o sinal de <code>=</code> no R &#xE9; um comando execut&#xE1;vel, um operador para criar objetos; O sinal matem&#xE1;tico de igualdade no R &#xE9; <code>==</code> (dois sinais de igual seguidos).</p>
+<h2 id="criando-objetos-com-a-fun&#xE7;&#xE3;o-concatenar-c">Criando objetos com a fun&#xE7;&#xE3;o &quot;concatenar&quot; <code>c()</code>:</h2>
+<pre><code>z=c(1,2,3,4,5) # Cria o objeto z que recebe os n&#xFA;meros de 1 a 5.
+w=c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;) # Cria o objeto w que cont&#xE9;m as letras de &quot;a&quot; a &quot;e&quot;.
+k=c(569.2, 326.5, 297.47, 624.1, 358.4)
+</code></pre><p>Os objetos formados pela fun&#xE7;&#xE3;o <code>c()</code> s&#xE3;o chamados de &quot;vetores&quot; e permitem manipula&#xE7;&#xF5;es como os objetos mais b&#xE1;sicos:</p>
+<pre><code>z*k # Multiplicar z por k. Fique atento aos resultados!!!
+</code></pre><p>Agora tente fazer o mesmo com z e w:</p>
+<pre><code>z*w
+</code></pre><p>Voc&#xEA; provavelmente obteve a resposta abaixo:</p>
+<pre><code>Error in z * w : non-numeric argument to binary operator
+</code></pre><p>Isso ocorre porque o R n&#xE3;o consegue multiplicar um n&#xFA;mero (elementos de <code>z</code>) por uma letra (elementos de <code>w</code>). Isso ocorre porque o R reconhece diferentes tipos de objetos. Vamos ver alguns deles:</p>
+<ul>
+<li>integer: n&#xFA;mero inteiro (1, 2, 458, 7895, etc.)</li>
+<li>numeric: n&#xFA;mero inteiro e fracion&#xE1;rio (236.5, 15.2, 794.654798123, etc.)</li>
+<li>logical: um valor l&#xF3;gico bin&#xE1;rio (TRUE ou FALSE);</li>
+<li>character: letra ou palavra (&quot;a&quot;, &quot;A irm&#xE3; do Jo&#xE3;o&quot;, &quot;2+321&quot;, etc.): Repare que objetos do tipo character s&#xE3;o criados colocando aspas duplas antes e depois do elemento que se quer definir como um character. Assim:</li>
+</ul>
+<pre><code>num=2+321 # cria um objeto num&#xE9;rico
+str=&quot;2+321&quot; # cria um objeto do tipo character
+</code></pre><p>Para saber se um objeto &#xE9; de um desses tipos, basta usar uma das fun&#xE7;&#xF5;es abaixo:</p>
+<pre><code>is.integer()
+is.numeric()
+is.character()
+is.logical()
+</code></pre><p>Agora podemos entender por que o R n&#xE3;o fez a multiplica&#xE7;&#xE3;o <code>z*w</code>:</p>
+<pre><code>is.numeric(z)
+is.numeric(w)
+is.character(z)
+is.character(w)
+</code></pre><p>O fato &#xE9; que <code>z</code> &#xE9; um objeto num&#xE9;rico, mas <code>w</code> &#xE9; um objeto do tipo character. Da&#xED; a resposta de erro do R:</p>
+<pre><code>Error in z * w : non-numeric argument to binary operator
+</code></pre><p>Para finalizar, vamos falar de um outro tipo de objeto, os data frames:</p>
+<pre><code># data.frame()
+</code></pre><p>Vamos passar os vetores <code>z</code>, <code>w</code> e <code>k</code> como argumentos da fun&#xE7;&#xE3;o <code>data.frame()</code>. Vamos dar o nome de &quot;dados&quot; a esse data frame:</p>
+<pre><code>dados=data.frame(z, w, k)
+</code></pre><p>Leia-se: o objeto <code>dados</code> recebe o data frame criado com os objetos <code>z</code>, <code>w</code> e <code>k</code>. Agora imprima na tela o objeto <code>dados</code>:</p>
+<pre><code>dados
+</code></pre><p>Um data frame nada mais &#xE9; do que uma tabela. Ele tem in&#xFA;meras propriedades e &#xE9; diferente de outros tipos de &quot;tabelas&quot; do R, como os objetos do tipo <code>matrix</code>. Mas isso n&#xE3;o &#xE9; importante agora. Vamos a uma &#xFA;ltima manipula&#xE7;&#xE3;o:</p>
+<p>Crie o objeto <code>f</code> como abaixo:</p>
+<pre><code>f=c(&quot;A1&quot;,&quot;A2&quot;,&quot;A3&quot;,&quot;A4&quot;)
+</code></pre><p>Agora vamos fazer um data frame com <code>z</code>, <code>w</code>, <code>k</code> e <code>f</code>:</p>
+<pre><code>dados2=data.frame(z, w, k, f)
+</code></pre><p>Voc&#xEA; deve ter obtido o seguinte erro:</p>
+<pre><code>Error in data.frame(z, w, k, f) :
+   arguments imply differing number of rows: 5, 4
+</code></pre><p>Entendeu por qu&#xEA;? Todas as colunas de um data frame t&#xEA;m de ter o mesmo n&#xFA;mero de linhas. Vamos recriar o vetor <code>f</code> ent&#xE3;o, incluindo, no final, o elemento <code>NA</code>.</p>
+<pre><code>f=c(&quot;A1&quot;,&quot;A2&quot;,&quot;A3&quot;,&quot;A4&quot;, NA)
+</code></pre><p>Agora refa&#xE7;a o data frame &quot;dados2&quot;.</p>
+<pre><code>dados2=data.frame(z, w, k, f)
+</code></pre><p>E imprima-o na tela:</p>
+<pre><code>dados2
+</code></pre><p>Mas o que &#xE9; o <code>NA</code>? Vamos perguntar para o R:</p>
+<pre><code>?NA
+</code></pre><p>Sempre que houver alguma d&#xFA;vida sobre uma fun&#xE7;&#xE3;o do R, voc&#xEA; pode usar o ponto de interroga&#xE7;&#xE3;o seguido da fun&#xE7;&#xE3;o para obter ajuda. <code>NA</code> (&quot;Not Available/Missing Values&quot;) &#xE9; o valor que usamos quando queremos deixar um &quot;lugar vazio&quot;.</p>
+<p>Agora vamos para a parte 2, em que aprenderemos como importar dados para o R.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Cap1.html" class="navigation navigation-prev " aria-label="Previous page: 1.1. Instalando o R">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Cap3.html" class="navigation navigation-next " aria-label="Next page: 1.3. Manipulando tabelas de dados">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.2. Primeiros passos com o R","level":"1.4","depth":1,"next":{"title":"1.3. Manipulando tabelas de dados","level":"1.5","depth":1,"path":"Cap3.md","ref":"Cap3.md","articles":[]},"previous":{"title":"1.1. Instalando o R","level":"1.3","depth":1,"path":"Cap1.md","ref":"Cap1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Cap2.md","mtime":"2020-08-23T04:03:49.893Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-28T15:07:46.013Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

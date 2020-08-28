@@ -1,0 +1,688 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2. MODELOS DE REGRESSÃO · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Cap5.html" />
+    
+    
+    <link rel="prev" href="Cap4.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Apresentação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Cap1.html">
+            
+                <a href="Cap1.html">
+            
+                    
+                    1. CONHECENDO O R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Cap1.html">
+            
+                <a href="Cap1.html">
+            
+                    
+                    1.1. Instalando o R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Cap2.html">
+            
+                <a href="Cap2.html">
+            
+                    
+                    1.2. Primeiros passos com o R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cap3.html">
+            
+                <a href="Cap3.html">
+            
+                    
+                    1.3. Manipulando tabelas de dados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Cap4.html">
+            
+                <a href="Cap4.html">
+            
+                    
+                    1.4. Investigando tabelas de dados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="Cap5.html">
+            
+                <a href="Cap5.html">
+            
+                    
+                    2. MODELOS DE REGRESSÃO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="Cap5.html">
+            
+                <a href="Cap5.html">
+            
+                    
+                    2.1. O básico sobre regressão
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Cap6.html">
+            
+                <a href="Cap6.html">
+            
+                    
+                    2.2. Fatores aleatórios e modelos mistos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Cap7.html">
+            
+                <a href="Cap7.html">
+            
+                    
+                    2.3. Checando os pressupostos do modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Cap8.html">
+            
+                <a href="Cap8.html">
+            
+                    
+                    2.4. Reportando seu modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Cap9.html">
+            
+                <a href="Cap9.html">
+            
+                    
+                    3. MODELOS COM DUAS VARIÁVEIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Cap9.html">
+            
+                <a href="Cap9.html">
+            
+                    
+                    3.1. Modelo com duas variáveis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Cap10.html">
+            
+                <a href="Cap10.html">
+            
+                    
+                    3.2. Diagnósticos do modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Cap11.html">
+            
+                <a href="Cap11.html">
+            
+                    
+                    3.3. Investigando os efeitos aleatórios
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >2. MODELOS DE REGRESSÃO</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="o-b&#xE1;sico-sobre-regress&#xE3;o">O b&#xE1;sico sobre regress&#xE3;o</h1>
+<h1 id="anova">ANOVA</h1>
+<p>Nessa primeira parte, vamos fazer uma An&#xE1;lise de Vari&#xE2;ncia com a fun&#xE7;&#xE3;o <code>aov()</code>. Come&#xE7;aremos nosso trabalho carregando os dados da tabela <code>first fixation.csv</code>. Essa tabela nos foi cedida gentilmente por Forster, Rodrigues &amp; Corr&#xEA;a (2019).</p>
+<pre><code>first=read.csv(file.choose())
+</code></pre><p>Vamos investigar a tabela:</p>
+<pre><code>head(first)
+str(first)
+</code></pre><p>Ela apresenta:</p>
+<ul>
+<li>1 coluna com os sujeitos;</li>
+<li>1 coluna com as condi&#xE7;&#xF5;es (<code>multiple</code> e <code>single</code>);</li>
+<li>4 colunas com as respostas de cada sujeito para cada um dos 4 itens (<code>X10</code>, <code>X7</code>, <code>X8</code> e <code>X9</code>).</li>
+<li>O que est&#xE1; sendo medido &#xE9; o tempo para a primeira fixa&#xE7;&#xE3;o num experimento de rastreamento ocular.</li>
+</ul>
+<p>Observe que essa tabela est&#xE1; no formato horizontal (<em>wide</em>). Precisamos, ent&#xE3;o, transform&#xE1;-la para o formato vertical. Mas antes, vamos fazer umas mudan&#xE7;as nos nomes das colunas. Nomeie as colunas da seguinte forma:</p>
+<pre><code>colnames(first)=c(&quot;suj&quot;, &quot;cond&quot;, &quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;)
+</code></pre><p>Visualize mais uma vez sua tabela com <code>head()</code>. E ent&#xE3;o vamos carregar o pacote (<code>tidyr</code>).</p>
+<pre><code>require(tidyr)
+</code></pre><p>Lembre-se de que, se voc&#xEA; n&#xE3;o tiver esse pacote, precisa instal&#xE1;-lo. Repare que, ao instalar pacote, o nome deve estar entre aspas duplas <code>&quot;nome&quot;</code>.</p>
+<pre><code>install.packages(&quot;tydir&quot;)
+</code></pre><p>Agora sim vem a m&#xE1;gica! N&#xF3;s vamos usar a fun&#xE7;&#xE3;o <code>gather()</code>. Com ela, n&#xF3;s vamos criar duas novas colunas a partir de 4. A primeira coluna ter&#xE1; os elementos: &quot;A&quot;, &quot;B, &quot;C&quot; e &quot;D&quot;. Ela se chamar&#xE1;: <code>itens</code>. A segunda coluna ter&#xE1; os n&#xFA;meros correspondentes vinculados a eles: <code>tempo</code>. E distribu&#xED;dos adequadamente para sujeitos e condi&#xE7;&#xF5;es. (Voc&#xEA; vai entender melhor depois que ver a tabela pronta.)</p>
+<pre><code>long=gather(first, itens, tempo, A:D)
+</code></pre><p>Perceba que <code>tempo</code> e <code>itens</code> foram nomes que acabamos de inventar; eles poderiam ser quaisquer nomes: <code>x</code> e <code>y</code>; <code>pranchas</code> e <code>fixa&#xE7;&#xE3;o</code>, etc.</p>
+<p>Vamos inspecionar a estrutura desse <code>data.frame</code></p>
+<pre><code>str(long)
+</code></pre><p>Observe que a coluna <code>itens</code> &#xE9; do tipo <code>chr</code> (<code>character</code>). E que a coluna <code>suj</code> &#xE9; do tipo <code>num</code> (<code>numeric</code>). Vamos transform&#xE1;-las em colunas do tipo <code>factor</code> (<code>fator</code>).</p>
+<pre><code>long$itens=as.factor(long$itens)
+long$suj=as.factor(long$suj)
+</code></pre><p>Verifiquemos mais uma vez a estrutura:</p>
+<pre><code>str(long)
+</code></pre><p>Como no trabalho original os autores apresentaram uma ANOVA, vamos calcul&#xE1;-la. Vamos modelar o tempo em fun&#xE7;&#xE3;o do tipo de condi&#xE7;&#xE3;o: <code>single</code> ou <code>multiple</code>.</p>
+<pre><code>mod.anova=aov(tempo~cond, data=long)
+</code></pre><p>Observa&#xE7;&#xF5;es importantes:</p>
+<ul>
+<li>A ANOVA que acabamos de modelar n&#xE3;o &#xE9; a adequada para esse design experimental, visto que ela n&#xE3;o incorpora a variabilidade devida aos sujeitos e aos itens, mas como ainda n&#xE3;o discutimos &quot;efeitos aleat&#xF3;rios&quot;, vamos mant&#xEA;-la assim para fins did&#xE1;ticos.</li>
+<li>O R tem a fun&#xE7;&#xE3;o <code>aov()</code> e a fun&#xE7;&#xE3;o <code>anova()</code>. A fun&#xE7;&#xE3;o que realiza um modelo de An&#xE1;lise de Vari&#xE2;ncia &#xE9; <code>aov()</code>. Fa&#xE7;a uma busca com <code>help</code>:</li>
+</ul>
+<pre><code>?anova
+?aov
+</code></pre><p>Ent&#xE3;o fique atento!</p>
+<p>Dito isso, vamos visualizar o sum&#xE1;rio da nossa ANOVA.</p>
+<pre><code>summary(mod.anova)
+</code></pre><p>Aqui temos a cl&#xE1;ssica tabela da An&#xE1;lise de Vari&#xE2;ncia com um resultado significativo para <code>cond</code>. Mas qual condi&#xE7;&#xE3;o &#xE9; mais lenta/r&#xE1;pida, <code>single</code> ou <code>multiple</code>?! A ANOVA n&#xE3;o nos d&#xE1;. Ela apenas diz que h&#xE1; uma diferen&#xE7;a sigificativa entre as amostras. Mas n&#xF3;s podemos conseguir diretamente da nossa tabela de dados.</p>
+<pre><code>aggregate(long$tempo, by=list(long$cond), mean)
+</code></pre><p>O que essa fun&#xE7;&#xE3;o faz:</p>
+<ul>
+<li>calcula a m&#xE9;dia (<code>mean</code>) dos tempos (<code>long$tempo</code>) em fun&#xE7;&#xE3;o da vari&#xE1;vel condi&#xE7;&#xE3;o (<code>long$cond</code>). Segundo esses dados, a condi&#xE7;&#xE3;o <code>single</code> torna o tempo para a primeira fixa&#xE7;&#xE3;o mais lento!</li>
+</ul>
+<p>Pare um minutinho aqui e v&#xE1; at&#xE9; o p&#xF4;ster onde esses dados foram publicados (Forster, Rodrigues &amp; Corr&#xEA;a, 2019) e procure pelo Gr&#xE1;fico 3. Compare as m&#xE9;dias de l&#xE1; com as daqui! Se voc&#xEA; quiser, pode visualizar os dados com um <code>boxplot</code>:</p>
+<pre><code>boxplot(tempo~cond, data=long)
+</code></pre><p>Outro coment&#xE1;rio importante: se estiv&#xE9;ssemos aplicando um modelo &quot;pra valer&quot;, e n&#xE3;o apenas dando um exemplo did&#xE1;tico, dever&#xED;amos aqui testar os pressupostos do nosso modelo. Vamos ignorar essa etapa por enquanto.</p>
+<h1 id="regress&#xE3;o-linear">REGRESS&#xC3;O LINEAR</h1>
+<p>Carregar o pacote <code>lme4</code>:</p>
+<pre><code>require(lme4)
+</code></pre><p>Existem duas fun&#xE7;&#xF5;es principais que usaremos desse pacote. S&#xE3;o elas:</p>
+<ul>
+<li><code>lmer()</code>: realiza modelos mistos que se sustentam na distribui&#xE7;&#xE3;o normal;</li>
+<li><code>glmer()</code>: realiza modelos mistos que se sustentam em outras distribui&#xE7;&#xF5;es;</li>
+</ul>
+<p>Dica mnem&#xF4;nica: o <code>g</code> em <code>glmer</code> &#xE9; de <em>generalized</em>. Os modelos lineares default s&#xE3;o os que tratam de vari&#xE1;veis dependentes cont&#xED;nuas, mas eles foram &quot;generalizados&quot; para outros tipos de vari&#xE1;veis dependentes: bin&#xE1;rias, contagem, etc. Nesse curso, vamos trabalhar apenas com vari&#xE1;veis cont&#xED;nuas. Vamos usar apenas a fun&#xE7;&#xE3;o <code>lmer()</code>.</p>
+<p>Fazer um modelo misto com tempo em fun&#xE7;&#xE3;o de (<code>~</code>) <code>cond</code> e <code>Sujeitos</code> e <code>Itens</code> como fatores aleat&#xF3;rios (n&#xE3;o vamos explicar em detalhes essa sintaxe agora. Primeiro vamos entender a l&#xF3;gica por aqui. Quando estivermos mais avan&#xE7;ados, detalharemos melhor.)</p>
+<pre><code>mod.misto=lmer(tempo~cond + (1|suj) + (1|itens), data=long)
+</code></pre><p>Sumarizar o modelo:</p>
+<pre><code>summary(mod.misto)
+</code></pre><p>Os modelos mistos t&#xEA;m um output gigantesco. Vamos observ&#xE1;-lo com calma! Informa&#xE7;&#xF5;es b&#xE1;sicas sobre o modelo rodado:</p>
+<pre><code>#-------------------------------------------------------------------------------
+# Linear mixed model fit by REML [&apos;lmerMod&apos;]
+# Formula: tempo ~ cond + (1 | suj) + (1 | itens)
+# Data: long
+# REML criterion at convergence: 534.1
+#-------------------------------------------------------------------------------
+# Quantis dos res&#xED;duos do modelo
+#-------------------------------------------------------------------------------
+# Scaled residuals:
+#   Min       1Q        Median    3Q       Max
+#   -2.15994  -0.57818  -0.09132  0.40515  2.99107
+#-------------------------------------------------------------------------------
+# Tabela sobre os efeitos aleat&#xF3;rios
+#-------------------------------------------------------------------------------
+# Random effects:
+#   Groups   Name        Variance Std.Dev.
+# suj      (Intercept) 0.3474   0.5894  
+# itens    (Intercept) 1.5878   1.2601  
+# Residual             2.4805   1.5750  
+# Number of obs: 136, groups:  suj, 34; itens, 4
+#-------------------------------------------------------------------------------
+# Tabela sobre os efeitos fixos
+#-------------------------------------------------------------------------------
+# Fixed effects:
+#               Estimate    Std. Error  t value
+# (Intercept)   2.0221      0.6737      3.001
+# condsing      1.2674      0.3374      3.757
+#-------------------------------------------------------------------------------
+# Tabela de correla&#xE7;&#xE3;o entre os efeitos fixos
+#-------------------------------------------------------------------------------
+# Correlation of Fixed Effects:
+#           (Intr)
+# condsing  -0.250
+#------------------------------------------------------------------------------
+</code></pre><p>N&#xE3;o vamos entrar em detalhes agora sobre toda ela. Isso ser&#xE1; feito ao longo das aulas. Vamos ficar com a Tabela sobre efeitos fixos e entender o que ela significa.</p>
+<p>Vamos comparar essa tabela com a de um modelo linear simples (sem fatores aleat&#xF3;rios). A fun&#xE7;&#xE3;o para aplicar esse modelo &#xE9; default do R e se chama <code>lm()</code>:</p>
+<pre><code>mod.simples=lm(tempo~cond, data=long)
+</code></pre><p>Olhe com aten&#xE7;&#xE3;o para essa sintaxe. Agora compare-a com a sintaxe da ANOVA que fizemos:</p>
+<pre><code>mod.anova=aov(tempo~cond, data=long)
+</code></pre><p>Elas s&#xE3;o id&#xEA;nticas. Agora vamos sumarizar o modelo simples:</p>
+<pre><code>summary(mod.simples)
+</code></pre><p>Observe as estimativas dos ditos &quot;Coefficients&quot; (<code>mod.simples</code>) em contraste com as estimativas dos &quot;Fixed effects&quot; (<code>mod.misto</code>). Se voc&#xEA; quiser, pode acess&#xE1;-las com as seguintes fun&#xE7;&#xF5;es:</p>
+<pre><code>coefficients(mod.simples)
+</code></pre><p>Mais abreviadamente, voc&#xEA; pode usar <code>coef()</code>:</p>
+<pre><code>coef(mod.simples)
+fixef(mod.misto)
+</code></pre><p>Como voc&#xEA; deve ter notado, elas s&#xE3;o id&#xEA;nticas! Mas &#xE0;s vezes podem n&#xE3;o ser:</p>
+<p>Por que isso ocorre?</p>
+<ul>
+<li><code>lm()</code> calcula a estimativa baseada no m&#xE9;todo dos M&#xED;nimos Quadrados Ordin&#xE1;rios (OLS);</li>
+<li><code>lmer()</code> calcula a estimativa baseada no m&#xE9;todo REML (<em>Restricted Maximum Likelihood</em> ou <em>M&#xE1;xima Verossimilhan&#xE7;a Restrita</em>).</li>
+</ul>
+<p>Mas de onde surgiram essas estimativas? Vamos usar de novo a fun&#xE7;&#xE3;o <code>aggregate()</code> para descobrir as m&#xE9;dias:</p>
+<pre><code>aggregate(long$tempo, by=list(long$cond), mean)
+</code></pre><p>Agora observe com carinho o resultado. Percebeu? A m&#xE9;dia do tempo para <code>mult</code> &#xE9; id&#xEA;ntica ao intercepto dos dois modelos (o misto e o simples). O que isso significa? Que o modelo simplesmente calculou a m&#xE9;dia dos tempos para a condi&#xE7;&#xE3;o <code>mult</code> e a &quot;segurou&quot; no intercepto. Daqui a pouco vamos discutir o que isso significa.</p>
+<p>Mas, e o valor para <code>sing</code> (<code>3.289412</code>)?</p>
+<p>Vamos trabalhar apenas com o modelo simples por enquanto. No modelo simples, esse valor era de <code>1.2674</code>. Nada a ver com essa m&#xE9;dia. Fa&#xE7;amos o seguinte ent&#xE3;o: subtraia o tempo de <code>sing</code> do de <code>mult</code>:</p>
+<pre><code>3.289412-2.022059
+</code></pre><p>O valor &#xE9; exatamente o do modelo: <code>1.267353</code>. O que o modelo linear est&#xE1; fazendo &#xE9; uma coisa muito simples: tirar a m&#xE9;dia de um fator (<code>sing</code>), subtrair da m&#xE9;dia do outro (<code>mult</code>), e te dar essa diferen&#xE7;a.</p>
+<p>Isso &#xE9; exatamente o que a ANOVA faz: comparar m&#xE9;dias. A ANOVA diz: o tempo m&#xE9;dio para a primeira fixa&#xE7;&#xE3;o, para o fator <code>mult</code>, &#xE9; menor do que para o fator <code>sing</code>. O modelo linear diz: mudar do fator <code>sing</code> para o fator <code>mult</code> reduz o tempo para a primeira fixa&#xE7;&#xE3;o. Na verdade, a ANOVA &#xE9; um tipo especial de modelo linear (mas isso fica para outra hora). Por isso tem a mesma sintaxe do modelo linear.</p>
+<p>Quanto aos nossos dados, acabamos de descobrir algo:</p>
+<ul>
+<li><code>cond</code> do tipo <code>sing</code> torna o tempo para primeira fixa&#xE7;&#xE3;o mais lento em <code>1.26 ms</code>.</li>
+</ul>
+<p>Mas por que chamamos isso de modelo linear? Por que o modelo est&#xE1; &quot;tra&#xE7;ando&quot; uma linha entre os pontos m&#xE9;dios de <code>mult</code> e <code>sing</code>, como no gr&#xE1;fico.</p>
+<p>Vamos plotar um gr&#xE1;fico, usando o pacote <code>ggplot2</code> para visualizar esses dados:</p>
+<pre><code>require(ggplot2)
+</code></pre><pre><code>ggplot(long, aes(x=cond, y=tempo)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(col=&quot;grey&quot;)+
+  theme_bw()+theme_classic()
+</code></pre><p>N&#xE3;o discutiremos essa sintaxe aqui. Precisar&#xED;amos de um curso inteiro sobre o pacote <code>ggplot2</code>. Mas agora precisamos entender aquelas estimativas do modelo algebricamente. Isso pode parecer idiota agora, mas ser&#xE1; bem importante mais &#xE0; frente. Ent&#xE3;o, tenha f&#xE9;!</p>
+<p>A f&#xF3;rmula mais b&#xE1;sica de uma equa&#xE7;&#xE3;o linear &#xE9;:</p>
+<pre><code>y = (a*x) + b
+</code></pre><p>Assim, imagine que <code>a=3</code> e <code>b=5</code>:</p>
+<pre><code>y = (3*x) + 5
+</code></pre><p>Logo, com dois valores de <code>x</code>, podemos montar uma reta no plano cartesiano:</p>
+<pre><code>slope=c(rep(3, 5)) # cria vetor com o n&#xFA;mero 3 repetido 5 vezes
+x=c(1, 2, 3, 4, 5) # vetor com os valores de 1 a 5
+y=(slope*x)+5 # vetor com slope multiplicando x e somando mais 5
+
+dados=data.frame(slope, x, y) # monta uma tabela de resultados
+
+dados
+</code></pre><p>Vamos plotar esses dados num gr&#xE1;fico:</p>
+<pre><code>plot(y~x, ylim=c(-5, 25), xlim=c(-5, 10))
+</code></pre><p>E acrescentar algumas linhas com <code>abline()</code>: linhas horizontal e vertical cortando o ponto (<code>x=0</code>, <code>y=0</code>):</p>
+<pre><code>abline(h=0, col=&quot;grey&quot;) # s&#xE3;o de cor cinza (&quot;grey&quot;)
+abline(v=0, col=&quot;grey&quot;)
+</code></pre><p>Ora, olhando para os pontos, vemos que eles formam uma linha. Essa linha tem duas caracter&#xED;sticas importantes:</p>
+<ul>
+<li>Quando <code>x=0</code>, <code>y=5</code>: Vamos plotar uma linha azul horizontal cortando o eixo <code>y</code> em <code>5</code>:</li>
+</ul>
+<pre><code>abline(5, 0, col=&quot;blue&quot;)
+</code></pre><ul>
+<li>Quando <code>x</code> aumenta em uma unidade, <code>y</code> aumenta em <code>3</code>. Basta olhar para a rela&#xE7;&#xE3;o entre x e y na tabela <code>dados</code>. Esse valor de <code>y</code> &#xE9; chamado de inclina&#xE7;&#xE3;o da reta (<em>slope</em>) (ou, tecnicamente, <em>coeficiente angular</em>):</li>
+</ul>
+<pre><code>20-17
+17-14 # etc.
+</code></pre><p>Vamos ent&#xE3;o plotar uma linha com esses par&#xE2;metros:</p>
+<pre><code>abline(5, 3, col=&quot;red&quot;)
+</code></pre><p>Se voc&#xEA; usar:</p>
+<pre><code>?abline
+</code></pre><p>Ver&#xE1; que o primeiro par&#xE2;metro &#xE9; chamado de <code>intercept</code> e o segundo de <code>slope</code>. Agora retomemos nossa equa&#xE7;&#xE3;o da reta:</p>
+<pre><code>y = (3*x) + 5
+</code></pre><p>O <code>3</code> &#xE9; justamente o valor que multiplica <code>x</code> na nossa fun&#xE7;&#xE3;o. E o <code>5</code>?! &#xC9; justamente o ponto onde a reta corta (intercepta) o eixo <code>y</code>. Mas o que isso tudo tem a ver com nosso modelo linear? Voltemos a ele:</p>
+<pre><code>summary(mod.simples)
+</code></pre><p>O intercepto (<code>2.0221</code>) &#xE9; justamente a m&#xE9;dia de <code>mult</code>, como j&#xE1; vimos. E o valor de <code>sing</code> (<code>1.2674</code>) &#xE9; a diferen&#xE7;a de <code>mult-sing</code>. Imagine que tenhamos uma regress&#xE3;o, ent&#xE3;o, do tipo:</p>
+<pre><code>y = (1.2674)*(cond)+2.0221
+</code></pre><p>Ora, <code>cond</code> pode ser de dois tipos, <code>mult</code> ou <code>sing</code>, mas n&#xE3;o podemos fazer uma conta com letras, apenas com n&#xFA;meros. Sabemos tamb&#xE9;m que o intercepto (<code>mult</code>) &#xE9; onde o valor de <code>x</code> &#xE9; zero. Logo, o programa deve ter dito que <code>cond</code>, quando <code>mult</code>, seria codificado como <code>0</code>.</p>
+<pre><code># y = (1.2674)*(mult)+2.0221
+# y=(1.2674)*(0)+2.0221
+# y = 0+2.0221
+# y = 2.0221
+</code></pre><p>Ora, sabemos tamb&#xE9;m que a inclina&#xE7;&#xE3;o &#xE9; o valor que multiplica a vari&#xE1;vel (<code>cond</code>), o nosso <code>x</code>. Logo, a inclina&#xE7;&#xE3;o &#xE9; <code>1.2674 ms</code>. Mas a inclina&#xE7;&#xE3;o &#xE9; tamb&#xE9;m a mudan&#xE7;a de uma unidade da vari&#xE1;vel. Logo, o programa deve ter codificado <code>cond sing</code> como 1 (ou seja, uma unidade).</p>
+<pre><code># y = (1.2674)*(sing)+2.0221
+# y = (1.2674)*(1)+2.0221
+# y = (1.2674)+2.0221
+# y = 3.289412
+</code></pre><p>Se voc&#xEA; tiver alguma d&#xFA;vida sobre o que o R est&#xE1; chamando de 0 e de 1, pode pedir a ele os contrastes que aplicou automaticamente ao fator <code>cond</code>:</p>
+<pre><code>contrasts(long$cond)
+</code></pre><p>Lembra das m&#xE9;dias que calculamos com a fun&#xE7;&#xE3;o <code>aggregate()</code>? O que fizemos aqui foi apenas andar em c&#xED;rculos: dos coeficientes para as m&#xE9;dias para os coeficientes para as m&#xE9;dias. <em>There and back again!</em></p>
+<p>Mas como isso se reflete em termos te&#xF3;ricos? O que essas contas todas dizem sobre os meus dados? Voltemos &#xE0; f&#xF3;rmula da regress&#xE3;o linear:</p>
+<pre><code>y=(a*x)+b
+</code></pre><p>Vamos pegar um sujeito aleat&#xF3;rio da tabela <code>long</code>, digamos, o de n&#xFA;mero 10:</p>
+<pre><code>dec=subset(long, long$suj==10)
+dec
+</code></pre><p>Agora vamos pegar esse sujeito em um item qualquer da condi&#xE7;&#xE3;o <code>mult</code> digamos, o item B. O tempo para primeira fixa&#xE7;&#xE3;o desse sujeito nesse item &#xE9; de <code>1.63 ms</code>. Ora, o tempo m&#xE9;dio para primeira fixa&#xE7;&#xE3;o na condi&#xE7;&#xE3;o <code>mult</code> &#xE9; de <code>2.02 ms</code>.</p>
+<pre><code>2.02-1.63
+</code></pre><p>Esse cidad&#xE3;o, portanto, &#xE9; mais r&#xE1;pido (<code>0.39 ms</code>) do que a m&#xE9;dia dada. Ora, se o tempo fosse influenciado apenas pelo tipo <code>cond</code> e por um valor b&#xE1;sico comum a todos (o intercepto), ele teria que ter um tempo id&#xEA;ntico ao de todos!!!</p>
+<p>Fatores outros que n&#xE3;o a <code>cond</code> e o intercepto comp&#xF5;em esse tempo de <code>1.63 ms</code>. Que fatores s&#xE3;o esses?! N&#xE3;o sabemos, mas precisamos inclu&#xED;-los no modelo: A esses fatores n&#xE3;o sabidos, chamamos de <code>Fator de Erro, Erro ou Res&#xED;duos</code>.</p>
+<pre><code># y=(a*x)+b+Erro
+</code></pre><p>A nossa equa&#xE7;&#xE3;o linear agora &#xE9; do tipo acima. No caso do sujeito 10, no item B, podemos dizer que seu tempo <code>y</code> &#xE9; dado por:</p>
+<pre><code># y=(1.2674)*(mult)+2.0221+Erro
+</code></pre><p>Ora, sabemos que <code>mult=0</code>, ent&#xE3;o:</p>
+<pre><code># y=(1.2674)*(0)+2.0221+Erro
+# y=2.0221+Erro
+</code></pre><p>Ora, sabemos que seu tempo <code>y</code> &#xE9; de <code>1.63 ms</code>:</p>
+<pre><code># 1.63=2.0221+Erro
+</code></pre><p>Logo, o Erro &#xE9; de:</p>
+<pre><code># Erro=0.39
+</code></pre><p>Basicamente, &#xE9; o valor observado menos o valor estimado (ajustado) para cada observa&#xE7;&#xE3;o. Se voc&#xEA; quiser ver os res&#xED;duos do seu modelo, voc&#xEA; pode acess&#xE1;-los:</p>
+<pre><code>mod.simples$residuals # uma lista enorme ser&#xE1; impressa na tela!!!
+</code></pre><p>Observe que essa lista tem exatamente 136 n&#xFA;meros, a mesma quantidade de observa&#xE7;&#xF5;es da nossa tabela: um res&#xED;duo para cada observa&#xE7;&#xE3;o! Agora voc&#xEA; pode entender melhor a tabela dos modelos simples e mistos.</p>
+<pre><code>summary(mod.simples)
+</code></pre><p>L&#xE1; existe uma parte chamada &quot;Residuals&quot;. &#xC9; justamente a distribui&#xE7;&#xE3;o dos res&#xED;duos do seu modelo, organizados em quantis. Agora que voc&#xEA; j&#xE1; sabe acess&#xE1;-los, voc&#xEA; pode fazer aquela tabela do modelo manualmente com a fun&#xE7;&#xE3;o <code>summary()</code>, que usamos na primeira aula:</p>
+<pre><code>summary(mod.simples$residuals)
+</code></pre><p>Perceba que esses valores s&#xE3;o id&#xEA;nticos aos res&#xED;duos apresentados no modelo simples, exceto pela m&#xE9;dia, que o modelo n&#xE3;o mostra. Mas se voc&#xEA; achar confuso v&#xEA;-los assim, pode plot&#xE1;-los tamb&#xE9;m.</p>
+<pre><code>plot(mod.simples$residuals)
+</code></pre><p>Observe que eles est&#xE3;o dispostos em torno do ponto zero, ou seja, a m&#xE9;dia dos res&#xED;duos &#xE9; zero. Isso por que a soma dos res&#xED;duos &#xE9; zero e, logo, a m&#xE9;dia &#xE9; zero dividido por algo. Da&#xED; o modelo n&#xE3;o te mostrar a m&#xE9;dia, como faz <code>summary()</code>.</p>
+<p>Voc&#xEA; n&#xE3;o vai conseguir plotar os res&#xED;duos dos modelos mistos assim:</p>
+<pre><code>plot(mod.misto$residuals)
+</code></pre><p>Mas depois falamos disso!</p>
+<p>Vamos ent&#xE3;o fazer uma tabela resumitiva do que fizemos at&#xE9; agora. &#xC9; prov&#xE1;vel que voc&#xEA; n&#xE3;o entenda essa tabela enquanto a fazemos, mas, no final, ela far&#xE1; sentido. Prometo!</p>
+<p>Primeiro, vamos acrescentar o intercepto ajustado pelo modelo. Esse valor &#xE9; id&#xEA;ntico para todos!</p>
+<pre><code>long$intercepto=rep(2.022, length(long))
+head(long)
+</code></pre><p>Agora, vamos acrescentar os valores de cada condi&#xE7;&#xE3;o:</p>
+<ul>
+<li><code>mult</code>, como est&#xE1; no intercepto, acrescenta <code>0 ms</code> ao tempo;</li>
+<li><code>sing</code>, como ajustou o modelo, acrescenta <code>1.281 ms</code> ao tempo.</li>
+</ul>
+<p>Vamos acrescentar ent&#xE3;o <code>0</code> quando a condi&#xE7;&#xE3;o for <code>mult</code> e <code>1.281</code> quando for <code>sing</code>:</p>
+<pre><code>require(dplyr)
+long=mutate(long, coefs=if_else(long$cond==&quot;mult&quot;, 0, 1.267))
+</code></pre><p>Agora que voc&#xEA; j&#xE1; sabe acessar e visualizar os res&#xED;duos, vamos inclu&#xED;-los tamb&#xE9;m!</p>
+<pre><code>long$residuos=round(residuals(mod.simples), 3)
+</code></pre><p>Investigue novamente a tabela.</p>
+<pre><code>head(long, 2)
+tail(long, 2)
+</code></pre><p>Repare que:</p>
+<ul>
+<li>o valor observado &#xE9; igual &#xE0; soma dos valores restantes:</li>
+</ul>
+<pre><code>2.022+0+(-0.852) # para o sujeito 1
+2.022+1.267+(-0.309) # para o sujeito 33
+</code></pre><p>O que o modelo fez, portanto, foi decompor cada valor observado nos seus componentes. Na verdade, ele estimou, a partir dos valores observados, o que comporia esses valores para aquela popula&#xE7;&#xE3;o espec&#xED;fica. Por isso dizemos que estamos estimando par&#xE2;metros populacionais:</p>
+<ul>
+<li>um valor comum: o intercepto;</li>
+<li>um valor para a condi&#xE7;&#xE3;o: <code>mult=0</code> (zero); <code>sing=1.267</code>;</li>
+<li>e o que sobrou s&#xE3;o os res&#xED;duos, o Erro, o valor n&#xE3;o explicado.</li>
+</ul>
+<p>Observe que o res&#xED;duo &#xE9; justamente isso, um res&#xED;duo, uma sobra, o que n&#xE3;o p&#xF4;de ser explicado:</p>
+<pre><code>2.98-2.022-1.267 # para o sujeito 33
+</code></pre><p>At&#xE9; agora est&#xE1; f&#xE1;cil (est&#xE1;?!). Vamos ent&#xE3;o fazer uma &#xFA;ltima coisa antes de complicar: Divida a &#xE1;rea para os gr&#xE1;ficos em 4 paineis (2 linhas e 2 colunas)</p>
+<pre><code>par(mfrow=c(2,2))
+</code></pre><p>Agora use a fun&#xE7;&#xE3;o <code>plot()</code> para plotar um conjunto de gr&#xE1;ficos sobre seu modelo:</p>
+<pre><code>plot(mod.simples)
+</code></pre><p>Esses s&#xE3;o os gr&#xE1;ficos que acessam os pressupostos do modelo de regress&#xE3;o linear. Agora fa&#xE7;a o mesmo para a ANOVA que fizemos no in&#xED;cio!</p>
+<pre><code>plot(mod.anova)
+</code></pre><p>Percebeu alguma diferen&#xE7;a?! Tanto a ANOVA quanto os modelos lineares apresentam os mesmos res&#xED;duos. Compare os dois conjuntos de res&#xED;udos:</p>
+<pre><code>summary(residuals(mod.anova))
+summary(residuals(mod.simples))
+</code></pre><p>A ANOVA e o modelo linear s&#xE3;o exatamente a mesma coisa. Agora fa&#xE7;a um sum&#xE1;rio dos res&#xED;duos do modelo misto:</p>
+<pre><code>summary(residuals(mod.misto))
+</code></pre><p>Reparou como a estrutura dos res&#xED;duos do modelo misto &#xE9; diferente? No entanto, lembra-se que a estrutura dos efeitos fixos &#xE9; muito parecida?</p>
+<pre><code>coef(mod.simples)
+fixef(mod.misto)
+</code></pre><p>Essa a grande quest&#xE3;o: modelos mistos apresentam resultados de efeitos fixos muito parecidos com as dos modelos simples. A diferen&#xE7;a est&#xE1; em como eles lidam com os fatores de erro, a estrutura dos res&#xED;duos. E isso faz toda a diferen&#xE7;a quando se trata de trabalhar com dados lingu&#xED;sticos. Quer ver como os res&#xED;duos s&#xE3;o mesmo bem diferentes?</p>
+<pre><code>par(mfrow=c(2,1)) # divide a tela dos gr&#xE1;ficos em dois paineis
+</code></pre><p>Plota um histograma para os res&#xED;duos do modelo simples:</p>
+<pre><code>hist(residuals(mod.simples), prob=TRUE)
+lines(density(residuals(mod.simples)))
+</code></pre><p>Plota um histograma para os res&#xED;duos do modelo misto:</p>
+<pre><code>hist(residuals(mod.misto), prob=TRUE)
+lines(density(residuals(mod.misto)))
+</code></pre><p>Repare que os res&#xED;duos dos modelos simples s&#xE3;o, digamos, menos pr&#xF3;ximos de uma curva normal do que os do modelo misto. Deve haver, portanto, algum componente que explica os dados no modelo misto que o modelo simples (e a ANOVA) n&#xE3;o capturam.</p>
+<p>Vamos ent&#xE3;o investigar esses aspectos!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Cap4.html" class="navigation navigation-prev " aria-label="Previous page: 1.4. Investigando tabelas de dados">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Cap5.html" class="navigation navigation-next " aria-label="Next page: 2.1. O básico sobre regressão">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2. MODELOS DE REGRESSÃO","level":"1.7","depth":1,"next":{"title":"2.1. O básico sobre regressão","level":"1.8","depth":1,"path":"Cap5.md","ref":"Cap5.md","articles":[]},"previous":{"title":"1.4. Investigando tabelas de dados","level":"1.6","depth":1,"path":"Cap4.md","ref":"Cap4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Cap5.md","mtime":"2020-08-23T14:31:28.168Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-28T15:07:46.013Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

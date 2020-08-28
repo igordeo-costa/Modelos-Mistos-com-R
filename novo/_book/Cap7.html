@@ -1,0 +1,639 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.3. Checando os pressupostos do modelo · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Cap8.html" />
+    
+    
+    <link rel="prev" href="Cap6.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Apresentação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Cap1.html">
+            
+                <a href="Cap1.html">
+            
+                    
+                    1. CONHECENDO O R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Cap1.html">
+            
+                <a href="Cap1.html">
+            
+                    
+                    1.1. Instalando o R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Cap2.html">
+            
+                <a href="Cap2.html">
+            
+                    
+                    1.2. Primeiros passos com o R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cap3.html">
+            
+                <a href="Cap3.html">
+            
+                    
+                    1.3. Manipulando tabelas de dados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Cap4.html">
+            
+                <a href="Cap4.html">
+            
+                    
+                    1.4. Investigando tabelas de dados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Cap5.html">
+            
+                <a href="Cap5.html">
+            
+                    
+                    2. MODELOS DE REGRESSÃO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Cap5.html">
+            
+                <a href="Cap5.html">
+            
+                    
+                    2.1. O básico sobre regressão
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Cap6.html">
+            
+                <a href="Cap6.html">
+            
+                    
+                    2.2. Fatores aleatórios e modelos mistos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="Cap7.html">
+            
+                <a href="Cap7.html">
+            
+                    
+                    2.3. Checando os pressupostos do modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Cap8.html">
+            
+                <a href="Cap8.html">
+            
+                    
+                    2.4. Reportando seu modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Cap9.html">
+            
+                <a href="Cap9.html">
+            
+                    
+                    3. MODELOS COM DUAS VARIÁVEIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Cap9.html">
+            
+                <a href="Cap9.html">
+            
+                    
+                    3.1. Modelo com duas variáveis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Cap10.html">
+            
+                <a href="Cap10.html">
+            
+                    
+                    3.2. Diagnósticos do modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Cap11.html">
+            
+                <a href="Cap11.html">
+            
+                    
+                    3.3. Investigando os efeitos aleatórios
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >2.3. Checando os pressupostos do modelo</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="checando-os-pressupostos-do-modelo">Checando os pressupostos do modelo</h1>
+<p>Vamos continuar trabalhando com os dados da primeira fixa&#xE7;&#xE3;o de Forster, Rodrigues &amp; Corr&#xEA;a (2008) e com a tabela <code>long</code> (volte duas aulas se voc&#xEA; n&#xE3;o sabe do que estamos falando):</p>
+<pre><code>require(lme4)
+</code></pre><pre><code>mod.misto=lmer(tempo~cond+(1|suj)+(1|itens), data=long)
+</code></pre><p>Mas, antes de prosseguirmos, vamos olhar com mais aten&#xE7;&#xE3;o para os nossos dados. At&#xE9; agora investigamos o funcionamento dos modelos mistos. Mas podemos de fato aplicar um modelo misto a esses dados? Essa &#xE9; uma parte muito importante da estat&#xED;stica, mesmo quando se est&#xE1; fazendo uma ANOVA: <em>fazer o diagn&#xF3;stico do modelo</em>.</p>
+<p>Os principais pressupostos dos modelos de regress&#xE3;o (incluindo a ANOVA) s&#xE3;o:</p>
+<ul>
+<li>Normalidade;</li>
+<li>Homecedasticidade (homogeneidade de vari&#xE2;ncia);</li>
+<li>Independ&#xEA;ncia das observa&#xE7;&#xF5;es.</li>
+<li>Al&#xE9;m disso, valores extremos (<em>ouliers</em>) sempre podem enviesar os resultados.</li>
+</ul>
+<p>N&#xF3;s vamos seguir aqui (n&#xE3;o integralmente) o protocolo proposto por:</p>
+<ul>
+<li>Zuur et al. (2010).</li>
+<li>Esse autor, al&#xE9;m de muitos outros, argumenta para se confiar mais na an&#xE1;lise visual (gr&#xE1;ficos) do que nos testes... Mais &#xE0; frente discutiremos por qu&#xEA;...</li>
+</ul>
+<h2 id="valores-extremos-ou-outliers">Valores extremos ou <em>outliers</em></h2>
+<p>Um <em>outlier</em> &#xE9; um valor relativamente maior ou menor do que a m&#xE9;dia das observa&#xE7;&#xF5;es. Alguns manuais dizem que um <em>outlier</em> &#xE9; um ponto 3.5 vezes al&#xE9;m da m&#xE9;dia ou n&#xFA;mero que o valha. N&#xE3;o vamos nos ater a isso! Um modo (errado) de identificar um <em>outlier</em> &#xE9; olhando para os pontos al&#xE9;m dos extremos em um boxplot:</p>
+<pre><code>boxplot(tempo~cond, data=long)
+</code></pre><p>Outro modo (mais preciso) &#xE9; investigar os dados com o gr&#xE1;fico de pontos de Cleveland:</p>
+<pre><code>dotchart(long$tempo)
+</code></pre><p>Elementos muito &#xE0; esquerda ou muito &#xE0; direita, isolados, geralmente s&#xE3;o <em>outliers</em>. No nosso caso, n&#xE3;o parece haver nenhum ponto muito isolado, apesar de haver alguns bem &#xE0; direita. Um breve coment&#xE1;rio sobre tempo de rea&#xE7;&#xE3;o em geral. Nunca s&#xE3;o normalmente distribu&#xED;dos: s&#xE3;o geralmente assim&#xE9;tricos (<em>skewed</em>), tendo uma cauda maior &#xE0; direita. No nosso caso, ent&#xE3;o, tudo bem. <em>No outliers!</em> Podemos prosseguir!</p>
+<p>Mas se tiv&#xE9;ssemos? Se o <em>outlier</em> advier de um erro de medi&#xE7;&#xE3;o ou algo assim, deve ser exclu&#xED;do! Se representa varia&#xE7;&#xE3;o de fato observada, tem de ser mantido! Se retirar, sempre reportar quantos dados tirou (valor bruto) e quantos % representa das observa&#xE7;&#xF5;es totais. Se s&#xE3;o valores genu&#xED;nos que comprometem o modelo a ser usado (como geralmente acontece com os modelos de regress&#xE3;o), uma transforma&#xE7;&#xE3;o &#xE9; poss&#xED;vel. Ver Zuur et. al (2010) para um debate inicial sobre esse ponto!</p>
+<h2 id="normalidade">Normalidade</h2>
+<p>Primeiro ponto: modelos de regress&#xE3;o (mistos ou n&#xE3;o, e isso inclui ANOVA), assumem que os dados crus s&#xE3;o normalmente distribu&#xED;dos. Um corol&#xE1;rio disso &#xE9; que, se os dados crus s&#xE3;o normais, ent&#xE3;o os res&#xED;duos do modelo tamb&#xE9;m o s&#xE3;o. Apesar disso, regress&#xE3;o &#xE9; robusta contra a viola&#xE7;&#xE3;o desse pressuposto!</p>
+<p>O m&#xE9;todo mais comum de acessar normalidade dos dados &#xE9; acessando a normalidade dos res&#xED;duos do modelo por meio de um histograma:</p>
+<pre><code>hist(residuals(mod.misto), prob=TRUE)
+lines(density(residuals(mod.misto)))
+</code></pre><p>Um outro modo &#xE9; fazendo um gr&#xE1;fico em que se plotam os quantis dos res&#xED;duos contra os quantis de uma distrui&#xE7;&#xE3;o normal padr&#xE3;o (&quot;te&#xF3;rica&quot;). Voc&#xEA; pode fazer isso manualmente, usando <code>qqnorm</code>:</p>
+<pre><code>qqnorm(residuals(mod.misto))
+</code></pre><p>E adicionar uma linha a ele:</p>
+<pre><code>qqline(residuals(mod.misto))
+</code></pre><p>Ou, para os modelos mistos, usar a fun&#xE7;&#xE3;o <code>qqmath</code> do pacote <code>lattice</code> (bem melhor!):</p>
+<pre><code>require(lattice)
+qqmath(mod.misto, id=0.05)
+</code></pre><p><em>Grosso modo</em>:</p>
+<ul>
+<li>Linha reta: res&#xED;duos seguem distribui&#xE7;&#xE3;o normal. Tudo bem com seus dados!</li>
+<li>Do contr&#xE1;rio: res&#xED;duos n&#xE3;o seguem normalidade. &#xC9; preciso fazer algo!</li>
+</ul>
+<p>No nosso caso, n&#xE3;o est&#xE3;o, o que j&#xE1; era esperado, visto que dados de tempo geralmente s&#xE3;o assim&#xE9;tricos (<em>skewed</em>). Solu&#xE7;&#xE3;o: uma transforma&#xE7;&#xE3;o que garanta normalidade! J&#xE1; j&#xE1; voltamos a ela!</p>
+<p>Mas se o parecerista pedir um teste de normalidade? Voc&#xEA; pode fazer alguns:</p>
+<ul>
+<li>Shapiro-Wilk:</li>
+</ul>
+<pre><code>shapiro.test(residuals(mod.misto)) # Teste de Shapiro-Wilk para normalidade
+</code></pre><ul>
+<li>Komolgorov-Smirnov:</li>
+</ul>
+<pre><code>ks.test(residuals(mod.misto), &quot;pnorm&quot;) # Teste de Komolgorov-Smirnov para normalidade
+</code></pre><p>Em ambos, a Hip&#xF3;tese nula: popula&#xE7;&#xE3;o &#xE9; normalmente distribu&#xED;da. Logo: p-valor menor do que 0.05 significa que voc&#xEA; tem evid&#xEA;ncias para sustentar a hip&#xF3;tese alternativa: ela n&#xE3;o &#xE9; normalmente distribu&#xED;da! Que &#xE9; o nosso caso... segundo o primeiro teste, mas n&#xE3;o o segundo...</p>
+<p>Esses uns dos motivos para Zuur et al (2010) sugerirem evitar os testes e se concentrar na an&#xE1;lise visual:</p>
+<ul>
+<li>maioria dos modelos estat&#xED;sticos que assumem normalidade s&#xE3;o robustos contra viola&#xE7;&#xE3;o;</li>
+<li>para grandes amostras, o teorema central do limite garante normalidade;</li>
+<li>para pequenas amostras, o poder do teste de normalidade &#xE9; pequeno;</li>
+<li>para grandes amostras, o teste de normalidade &#xE9; sens&#xED;vel a pequenos desvios (contradizendo o teorema central do limite).</li>
+</ul>
+<p>Vamos ficar com ele ent&#xE3;o e sustentar que nossos dados n&#xE3;o s&#xE3;o normalmente distribu&#xED;dos, como mostra o <code>qqnorm</code> e o <code>qqmath</code>. Qual a solu&#xE7;&#xE3;o nesse caso? Uma transforma&#xE7;&#xE3;o dos dados! Daqui a pouco voltamos a ela.</p>
+<h1 id="homoscedasticidade">Homoscedasticidade</h1>
+<p>Homoscedasticidade &#xE9; o contr&#xE1;rio de heteroscedasticidade. Seus dados t&#xEA;m de ser homosced&#xE1;sticos! Mas primeiro, o que &#xE9; isso? Homoscesdasticidade se refere &#xE0; homogeneidade de vari&#xE2;ncia. Em geral, modelos lineares s&#xF3; conseguem comparar fatores quando a vari&#xE2;ncia de cada um deles &#xE9; semelhante. Voc&#xEA; pode verificar visualmente a homogeneidade da vari&#xE2;ncia com um <code>boxplot</code> dos res&#xED;duos.</p>
+<pre><code>boxplot(residuals(mod.misto)~long$cond)
+</code></pre><p>Mas &#xE9; muito dif&#xED;cil dizer de fato se as vari&#xE2;ncias s&#xE3;o semelhantes ou n&#xE3;o. Pelos <code>boxplots</code> parece que a vari&#xE2;ncia de <code>mult</code> &#xE9; menor do que a de <code>sing</code>. Mas o melhor mesmo &#xE9; verificar plotando os valores dos res&#xED;duos x valores ajustados (<code>fitted</code>):</p>
+<pre><code>plot(residuals(mod.misto)~fitted(mod.misto))
+</code></pre><p>Se achar essa op&#xE7;&#xE3;o complexa demais, pode usar essa (bem melhor!):</p>
+<pre><code>plot(mod.misto)
+</code></pre><p>Se os pontos estiverem distribu&#xED;dos uniformemente pelo gr&#xE1;fico, em torno da linha, ent&#xE3;o seus dados s&#xE3;o homog&#xEA;neos: n&#xE3;o h&#xE1; problemas por aqui! Mas se eles estiverem em algum formato (p. ex. de cone), ent&#xE3;o s&#xE3;o heterosced&#xE1;sticos: voc&#xEA; precisa dar um jeito nisso!</p>
+<p>Para melhorar ainda mais, voc&#xEA; pode acrescentar os seguintes par&#xE2;metros &#xE0; fun&#xE7;&#xE3;o <code>plot</code>:</p>
+<pre><code>plot(mod.misto, type=c(&quot;p&quot;, &quot;smooth&quot;))
+</code></pre><p>Nesse caso, se a linha &quot;smooth&quot; estiver praticamente reta, isso &#xE9; um bom sinal. Do contr&#xE1;rio, seus dados s&#xE3;o heterosced&#xE1;sticos! <em>Houston, we have a problem!</em></p>
+<p>Voc&#xEA; pode (e deve!) tamb&#xE9;m, plotar um <em>Scale-Location Plot</em>. Nesse caso, voc&#xEA; vai plotar os valores ajustados contra os res&#xED;duos estandardizados: a raiz quadrada dos valores absolutos dos res&#xED;duos:</p>
+<pre><code>plot(mod.misto,
+  sqrt(abs(resid(.)))~fitted(.),
+  type=c(&quot;p&quot;, &quot;smooth&quot;))
+</code></pre><p>Repare que os res&#xED;duos aumentam na medida em que aumentam os valores ajustados (<code>fitted</code>). A linha, portanto, n&#xE3;o est&#xE1; horizontal e os dados n&#xE3;o s&#xE3;o homosced&#xE1;sticos.</p>
+<p>Mas... e se o parecerista pedir um teste... Voc&#xEA; pode fazer um teste de Levene, que est&#xE1; no pacote <code>car</code>:</p>
+<pre><code>require(car)
+leveneTest(residuals(mod.misto)~long$cond)
+</code></pre><p>A Hip&#xF3;tese nula &#xE9; a de que a vari&#xE2;ncia das popula&#xE7;&#xF5;es s&#xE3;o iguais. Logo: p-valor menor do que 0.05 significa que voc&#xEA; tem evid&#xEA;ncias para sustentar a hip&#xF3;tese alternativa: ela n&#xE3;o &#xE9; homog&#xEA;nea! No nosso caso, os dados n&#xE3;o s&#xE3;o normais e n&#xE3;o s&#xE3;o homosced&#xE1;sticos! Qual a solu&#xE7;&#xE3;o?</p>
+<p>Uma primeira possibilidade &#xE9; uma transforma&#xE7;&#xE3;o dos dados! Uma outra op&#xE7;&#xE3;o &#xE9; desistir do modelo de regress&#xE3;o e investir em um modelo que n&#xE3;o requeira homogeneidade de vari&#xE2;ncia! Mas veja na apostila do curso a discuss&#xE3;o sobre isso. Como nos informa Howell (2010), descobrir que um tratamento qualquer torna as vari&#xE2;ncias diferentes j&#xE1; &#xE9; um achado em si.</p>
+<h2 id="correla&#xE7;&#xE3;o">Correla&#xE7;&#xE3;o</h2>
+<ul>
+<li>Not&#xED;cia ruim: Esse talvez seja o maior problema que os modelos de regress&#xE3;o podem apresentar;</li>
+<li>Not&#xED;cia boa: N&#xE3;o tem not&#xED;cia boa!</li>
+<li>Not&#xED;cia p&#xE9;ssima: &#xC9; um tema t&#xE3;o complexo que n&#xE3;o vamos discuti-lo nesse curso.</li>
+</ul>
+<h2 id="independ&#xEA;ncia-das-observa&#xE7;&#xF5;es">Independ&#xEA;ncia das observa&#xE7;&#xF5;es</h2>
+<p>Cada uma das observa&#xE7;&#xF5;es da vari&#xE1;vel resposta s&#xE3;o independentes? Em outras palavras, mensurou-se o tempo para a primeira fixa&#xE7;&#xE3;o do sujeito <code>x</code> em 4 momentos diferentes. Como saber que o tempo na primeira condi&#xE7;&#xE3;o n&#xE3;o influenciou na segunda? Como saber que o sujeito n&#xE3;o est&#xE1; sofrendo de um efeito de fadiga e ficando mais lento &#xE0; medida que realiza o experimento? Ou que est&#xE1; ficando mais r&#xE1;pido &#xE0; medida que avan&#xE7;a no experimento? Se isso ocorre, as observa&#xE7;&#xF5;es n&#xE3;o s&#xE3;o independentes!</p>
+<ul>
+<li>Not&#xED;cia ruim: N&#xE3;o &#xE9; problema f&#xE1;cil de identificar.</li>
+<li>Not&#xED;cia boa: Modelos mistos lidam bem com esse problema, como informa Baayen, Davidson &amp; Bates (2008). Por isso, vamos ficar aqui por enquanto.</li>
+</ul>
+<h2 id="aplicando-uma-transforma&#xE7;&#xE3;o">Aplicando uma transforma&#xE7;&#xE3;o</h2>
+<p>Agora que fizemos o diagn&#xF3;stico, vamos tentar solucionar os problemas. Vamos tentar uma transforma&#xE7;&#xE3;o logar&#xED;tmica da vari&#xE1;vel resposta: a fun&#xE7;&#xE3;o <code>log()</code> realiza a transforma&#xE7;&#xE3;o. Vamos aplic&#xE1;-la direto no modelo:</p>
+<pre><code>mod.log=lmer(log(tempo)~cond+(1|suj)+(1|itens), data=long)
+</code></pre><p>Voc&#xEA; deve ter recebido uma mensagem de erro parecida com essa:</p>
+<pre><code>Error in mkRespMod(fr, REML = REMLpass) : NA/NaN/Inf in &apos;y&apos;
+</code></pre><p>Tentemos descobrir o que est&#xE1; acontecendo. Comecemos criando uma nova coluna na nossa tabela com os tempos transformados para ent&#xE3;o investig&#xE1;-la visualmente!</p>
+<pre><code>log.t=log(long$tempo) # cria um vetor com os logaritmos
+long$log.t=log.t # adiciona &#xE0; tabela
+</code></pre><p>Agora imprima a tabela na tela e veja se encontra algo estranho na coluna <code>log.t</code> Achou? Em pelo menos dois lugares h&#xE1; <code>-Inf</code> em vez de um n&#xFA;mero. Isso ocorre porque a observa&#xE7;&#xE3;o era <code>zero</code> e o logaritmo de zero n&#xE3;o &#xE9; comput&#xE1;vel.</p>
+<pre><code>log(0)
+</code></pre><p>Da&#xED; o modelo misto n&#xE3;o saber lidar com essa informa&#xE7;&#xE3;o. Foi isso que o c&#xF3;digo de erro nos informou: <code>NA/NaN/Inf in &apos;y&apos;</code>. (<code>NA = Not Available</code>; <code>NaN = Not a Number</code>; e <code>Inf = Infinito</code>). Vamos exclu&#xED;-la, portanto!</p>
+<p>Observe que h&#xE1; apenas dois casos desse na tabela:</p>
+<pre><code>subset(long, long$tempo==0)
+long=subset(long, long$tempo!=0) # Retira as duas linhas de zero da tabela
+</code></pre><p>Agora vamos rodar o modelo novamente!</p>
+<pre><code>mod.log=lmer(log(tempo)~cond+(1|suj)+(1|itens), data=long)
+summary(mod.log)
+</code></pre><p>Antes de concluir qualquer coisa, lembre-se de que as estimativas agora n&#xE3;o mais est&#xE3;o em segundos, mas em logaritmo de segundos! Poder&#xED;amos partir para uma investiga&#xE7;&#xE3;o dos pressupostos do modelo, mas precisamos interromper novamente, porque h&#xE1; uma considera&#xE7;&#xE3;o te&#xF3;rica muito importante nesse ponto: h&#xE1;, nos nossos dados, valores entre 0 e 1 e valores acima de 1:</p>
+<pre><code>plot(long$tempo, ylim=c(-1,10))
+abline(h=1, col=&quot;blue&quot;) # linha horizontal em 1 segundo
+</code></pre><p>Como nos informa Osborne (2008), n&#xE3;o podemos aplicar uma transforma&#xE7;&#xE3;o logar&#xED;tmica a dados dessa natureza (veja mais detalhes sobre isso na apostila do curso). Temos agora uma op&#xE7;&#xE3;o antes da transforma&#xE7;&#xE3;o: fazer outra transforma&#xE7;&#xE3;o. Vamos come&#xE7;ar com a sugerida por Osborne (2008): simplesmente somar 1 a todos os valores de tempo, de modo que todos eles fiquem acima de 1.</p>
+<pre><code>plot(long$tempo+1, ylim=c(-1,10))
+abline(h=1, col=&quot;blue&quot;)
+</code></pre><p>Acima apenas mostramos no gr&#xE1;fico por motivos did&#xE1;ticos. Agora vamos fazer de verdade, j&#xE1; aplicando no modelo ambas as transforma&#xE7;&#xF5;es (<code>+1</code> e <code>log()</code>).</p>
+<pre><code>mod.log2=lmer(log(tempo+1)~cond+(1|suj)+(1|itens), data=long)
+summary(mod.log2)
+</code></pre><p>Da&#xED; podemos fazer a an&#xE1;lise dos pressupostos do modelo, que n&#xE3;o parecem muito bons (fa&#xE7;a um exerc&#xED;cio: olhe para os gr&#xE1;ficos e tente explicar por que eles n&#xE3;o est&#xE3;o legais):</p>
+<pre><code>qqmath(mod.log2, id=0.05) # N&#xE3;o normal!
+
+plot(mod.log2, type=c(&quot;p&quot;, &quot;smooth&quot;)) # N&#xE3;o homosced&#xE1;stico!
+
+plot(mod.log2, sqrt(abs(resid(.)))~fitted(.), type=c(&quot;p&quot;, &quot;smooth&quot;))
+</code></pre><p>O teste de Levene, por&#xE9;m, deu significativo, ou seja, temos evid&#xEA;ncia para sustentar a hip&#xF3;tese alternativa, de que os dados s&#xE3;o homog&#xEA;neos:</p>
+<pre><code>leveneTest(residuals(mod.log2)~long$cond)
+</code></pre><p>E o teste de Shapiro-Wilk d&#xE1; n&#xE3;o significativo, apesar de o Komolgorov-Smirnof dar:</p>
+<pre><code>shapiro.test(residuals(mod.log2))
+ks.test(residuals(mod.log2), &quot;pnorm&quot;)
+</code></pre><p>Vamos assumir, com os gr&#xE1;ficos, que nosso modelo n&#xE3;o est&#xE1; muito saud&#xE1;vel e, j&#xE1; que seguir a recomenda&#xE7;&#xE3;o de Osborne (2008) n&#xE3;o nos ajudou, ent&#xE3;o vamos tentar a outra op&#xE7;&#xE3;o: voltar os dados para a escala em que foram mensurados, ou seja, milissegundos em vez de segundos, bastando apenas multiplicar por <code>1000</code>.</p>
+<pre><code>mod.log3=lmer(log(tempo*1000)~cond+(1|suj)+(1|itens), data=long)
+summary(mod.log3)
+</code></pre><p>Esse vamos investigar com carinho.</p>
+<h3 id="normalidade">Normalidade</h3>
+<p>Vamos comparar os histogramas do <code>mod.misto</code> com o <code>mod.log3</code>:</p>
+<pre><code>par(mfrow=c(2,1))
+
+hist(residuals(mod.misto), prob=TRUE)
+lines(density(residuals(mod.misto)))
+
+hist(residuals(mod.log3), prob=TRUE)
+lines(density(residuals(mod.log3)))
+</code></pre><p>Bem melhor, n&#xE3;o?! Agora vamos fazer o mesmo com o <code>qqmath</code>:</p>
+<pre><code>qqmath(mod.misto, id=0.05)
+qqmath(mod.log3, id=0.05)
+</code></pre><p>Bem melhor mesmo!!! Agora um teste de normalidade!</p>
+<pre><code>shapiro.test(residuals(mod.log3))
+</code></pre><p>N&#xE3;o temos evid&#xEA;ncia para descartar a hip&#xF3;tese nula... de que h&#xE1; normalidade! Logo, nossos dados s&#xE3;o normais! Podemos prosseguir.</p>
+<h3 id="homoscedasticidade">Homoscedasticidade</h3>
+<p>Agora vamos para a homogeneidade das vari&#xE2;ncias:</p>
+<pre><code>plot(mod.log3, type=c(&quot;p&quot;, &quot;smooth&quot;))
+</code></pre><p>Dados sem formato de cone, bem mais aleatoriamente distribu&#xED;dos. Linha n&#xE3;o perfeitamente horizontal, mas certamente n&#xE3;o inclinada! E para o <em>Scale-Location Plot</em>:</p>
+<pre><code>plot(mod.log3,
+  sqrt(abs(resid(.)))~fitted(.),
+  type=c(&quot;p&quot;, &quot;smooth&quot;))
+</code></pre><p>Bem maior homogeneidade! N&#xE3;o temos evid&#xEA;ncia para sustentar hip&#xF3;tese alternativa: dados s&#xE3;o homog&#xEA;neos!</p>
+<p>Por fim, o teste de Levene nos indica que n&#xE3;o temos evid&#xEA;ncia para descartar a hip&#xF3;tese nula: dados s&#xE3;o, portanto, homog&#xEA;neos.</p>
+<pre><code>leveneTest(residuals(mod.log3)~long$cond)
+</code></pre><p>Poder&#xED;amos passar para a pr&#xF3;xima aula daqui, mas ainda n&#xE3;o acabamos. Fomos informados pelos pesquisadores que essa tabela ainda tem outras quest&#xF5;es. Vamos investig&#xE1;-las.</p>
+<h1 id="lidando-com-valores-perdidos">Lidando com valores perdidos</h1>
+<p>Primeiro, fomos informados que h&#xE1; alguns &quot;missing values&quot; (valores que n&#xE3;o puderam ser computados devido a problemas quaisquer (de medi&#xE7;&#xE3;o, por exemplo). E que esses valores foram substitu&#xED;dos pela m&#xE9;dia de cada grupo em cada item. Vamos elimin&#xE1;-los, portanto, e ver o que conseguimos: Primeiro, vamos excluir todos as observa&#xE7;&#xF5;es para o sujeito 14:</p>
+<pre><code>long=subset(long, long$suj!=&quot;14&quot;)
+</code></pre><p>Veja que agora <code>long</code> tem 4 linhas a menos: as 4 observa&#xE7;&#xF5;es que foram exclu&#xED;das:</p>
+<pre><code>nrow(long)
+</code></pre><p>Agora, todos os valores que forem iguais a 2.11 e 3.84 n&#xE3;o foram de fato medidos, mas acrescentados a fim de rodar a ANOVA (pr&#xE1;tica comum no campo. Veja Raajimakers, 2003). Vamos substitu&#xED;-los por NA (o que o R reconhece como <em>missing values</em>):</p>
+<pre><code>require(dplyr)
+
+long$tempo=na_if(long$tempo, 2.11) # substitui 2.11 por NA
+long$tempo=na_if(long$tempo, 3.84) # substitui 3.84 por NA
+</code></pre><p>Voc&#xEA; pode ver com a fun&#xE7;&#xE3;o <code>summary()</code> quantos valores retiramos:</p>
+<pre><code>summary(long$tempo)
+</code></pre><p>Agora vamos realizar um modelo misto com intercepto para sujeitos e itens. Mas antes, vamos rever nossas m&#xE9;dias com a fun&#xE7;&#xE3;o <code>tapply()</code>, ou aplicar tabela (<code>na.rm=T</code> indica para remover (<code>rm</code>) os <code>NA</code>; o <code>T</code> &#xE9; de <code>True</code>):</p>
+<pre><code>tapply(long$tempo, long$cond, mean, na.rm=T)
+</code></pre><p>Observe que elas mudaram um pouco: Agora &#xE9; 2.08 e 3.40, o que diz que <code>sing</code> parece aumentar o tempo em 1.32ms, n&#xE3;o mais 1.26ms. A diferen&#xE7;a se ampliou!</p>
+<pre><code>3.40-2.08
+</code></pre><p>Primeiro, um modelo com os tempos sem transforma&#xE7;&#xE3;o:</p>
+<pre><code>mod.na=lmer(tempo~cond+(1|suj)+(1|itens), data=long)
+summary(mod.na)
+</code></pre><p>Observe que as estimativas para os fatores fixos se modificaram um pouco. O intercepto foi de 2.02 ms para 2.04 ms (mas n&#xE3;o 2.08, como a m&#xE9;dia que calculamos!). Mas a estimativa do efeito de <code>sing</code> permaneceu em 1.26 ms (e n&#xE3;o 1.32ms!). Observe tamb&#xE9;m, na tabela de <code>random effects</code>, o n&#xFA;mero de observa&#xE7;&#xF5;es:</p>
+<pre><code># Number of obs: 120, groups:  suj, 33; itens, 4
+</code></pre><p>Sa&#xED;mos de um modelo com 136 observa&#xE7;&#xF5;es para um com 120. Retiramos:</p>
+<ul>
+<li>4 observa&#xE7;&#xF5;es do sujeito 14;</li>
+<li>10 <em>missing values</em> (NA&apos;s);</li>
+<li>E dois valores 0 que levavam o logaritmo a <code>-Inf</code>.</li>
+</ul>
+<pre><code>16/136*100
+</code></pre><p>Ou seja, retiramos 11,76% das observa&#xE7;&#xF5;es totais, o que &#xE9; bastante coisa. Vamos investigar a normalidade e heteroscedasticidade:</p>
+<pre><code>qqmath(mod.na, id=0.05) # N&#xE3;o normal!
+
+plot(mod.na, type=c(&quot;p&quot;, &quot;smooth&quot;)) # E heterosced&#xE1;stico!
+
+plot(mod.na,
+  sqrt(abs(resid(.)))~fitted(.),
+  type=c(&quot;p&quot;, &quot;smooth&quot;))
+</code></pre><p>N&#xE3;o vamos nem continuar. Vamos logo rodar o mesmo modelo com a transforma&#xE7;&#xE3;o logar&#xED;tmica j&#xE1; multiplicando por <code>1000</code>:</p>
+<pre><code>mod.log.na=lmer(log(tempo*1000)~cond+(1|suj)+(1|itens), data=long)
+summary(mod.log.na) # resultados dos efeitos em log(tempo)
+</code></pre><p>E rodar os diagn&#xF3;sticos:</p>
+<pre><code>qqmath(mod.log.na, id=0.05) # Normal!
+
+plot(mod.log.na, type=c(&quot;p&quot;, &quot;smooth&quot;)) # E homosced&#xE1;stico!
+
+plot(mod.log.na,
+  sqrt(abs(resid(.)))~fitted(.),
+  type=c(&quot;p&quot;, &quot;smooth&quot;))
+</code></pre><p>No caso desse experimento, podemos parar por aqui? Esse &#xE9; (quase) o modelo mais complexo que podemos conseguir com esse experimento. Mas por qu&#xEA;? Esse experimento tinha uma condi&#xE7;&#xE3;o com dois n&#xED;veis (<code>mult</code> e <code>sing</code>). Havia dois grupos de sujeitos, um para <code>mult</code> e um para <code>sing</code> (era um desenho <em>between subjects</em>):</p>
+<pre><code>tapply(long$tempo, list(long$suj, long$cond), mean, na.rm=T)
+</code></pre><p>Observe: o sujeito que via uma condi&#xE7;&#xE3;o n&#xE3;o via a outra. Mas, no que diz respeito aos itens, havia apenas um grupo deles para ambas as condi&#xE7;&#xF5;es (era um desenho <em>within itens</em>, ou seja, as mesmas pranchas com desenhos eram usadas ora com uma figura ora com duas figuras).</p>
+<pre><code>tapply(long$tempo, list(long$cond, long$itens), mean, na.rm=T)
+</code></pre><p>Recomendamos a leitura de Barr et al. (2013), sobretudo a simula&#xE7;&#xE3;o apresentada a partir da p&#xE1;gina 258. Logo, como itens est&#xE3;o distribu&#xED;dos entre as condi&#xE7;&#xF5;es, precisamos investigar se a condi&#xE7;&#xE3;o em que o item se encontra afeta o tempo de cada item particular.</p>
+<p>Colocamos intercepto para itens, mas se o tipo de item interagir com a condi&#xE7;&#xE3;o? E se um item tiver seu tempo m&#xE9;dio (intercepto) acelerado ou reduzido devido ao n&#xED;vel da condi&#xE7;&#xE3;o em que se encontra? At&#xE9; agora s&#xF3; fizemos um tipo de modelo: aquele com intercepto para sujeitos e itens. O ideal seria que tent&#xE1;ssemos tamb&#xE9;m um modelo com <em>slopes</em> para sujeitos e/ou itens dada cada condi&#xE7;&#xE3;o.</p>
+<pre><code>mod.novo=lmer(log(tempo*1000)~cond+(1|suj)+(1+cond|itens), data=long)
+</code></pre><p>Voc&#xEA; deve ter obtido a seguinte mensagem de erro:</p>
+<pre><code># boundary (singular) fit: see ?isSingular
+</code></pre><p>Quando se obt&#xE9;m esse tipo de resposta - <em>singular fit</em> (ou ajuste singular) -, normalmente significa que o seu modelo foi sobreajustado, ou seja, que a estrutura de efeitos aleat&#xF3;rios, no nosso caso, &#xE9; muito complexa para ser descrita pelos dados. Isso n&#xE3;o significa que ele n&#xE3;o foi ajustado. Voc&#xEA; pode v&#xEA;-lo normalmente com a fun&#xE7;&#xE3;o <code>summary()</code>.</p>
+<pre><code>summary(mod.novo)
+</code></pre><p>Mas repare bem na tabela de efeitos aleat&#xF3;rios: a vari&#xE2;ncia do slope para cond:sing &#xE9; pr&#xF3;xima de zero (0.00018) e a correla&#xE7;&#xE3;o &#xE9; perfeita (1.00). <em>Grosso modo</em>, o modelo est&#xE1; nos dizendo que esse slope n&#xE3;o contribui em nada para a explicar a variabilidade dos dados. Se voc&#xEA; quiser saber mais sobre isso, pode pesquisar pela fun&#xE7;&#xE3;o, que &#xE9; exatamente o que o c&#xF3;digo de erro est&#xE1; dizendo para voc&#xEA; fazer:</p>
+<pre><code>?isSingular
+</code></pre><p>O que n&#xF3;s faremos aqui, ent&#xE3;o, &#xE9; seguir a recomenda&#xE7;&#xE3;o de Barr et al (2013), que, ali&#xE1;s, est&#xE3;o citados a&#xED; no help dessa fun&#xE7;&#xE3;o: manter o modelo na m&#xE1;xima estrutura de efeitos aleat&#xF3;rios antes de alcan&#xE7;ar um ajuste singular.</p>
+<p>Nosso modelo final ent&#xE3;o &#xE9;:</p>
+<pre><code>mod.final=lmer(log(tempo*1000)~cond+(1|suj)+(1|itens), data=long)
+</code></pre><p>N&#xE3;o h&#xE1; nada mais que possamos fazer por aqui! Mas ainda precisamos saber como reportar esses dados e como conseguir (se &#xE9; que precisamos) os p-valores.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Cap6.html" class="navigation navigation-prev " aria-label="Previous page: 2.2. Fatores aleatórios e modelos mistos">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Cap8.html" class="navigation navigation-next " aria-label="Next page: 2.4. Reportando seu modelo">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.3. Checando os pressupostos do modelo","level":"1.10","depth":1,"next":{"title":"2.4. Reportando seu modelo","level":"1.11","depth":1,"path":"Cap8.md","ref":"Cap8.md","articles":[]},"previous":{"title":"2.2. Fatores aleatórios e modelos mistos","level":"1.9","depth":1,"path":"Cap6.md","ref":"Cap6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Cap7.md","mtime":"2020-08-23T20:12:59.241Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-28T15:07:46.013Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

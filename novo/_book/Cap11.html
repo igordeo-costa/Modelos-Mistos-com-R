@@ -1,0 +1,504 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.3. Investigando os efeitos aleatórios · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Cap10.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Apresentação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Cap1.html">
+            
+                <a href="Cap1.html">
+            
+                    
+                    1. CONHECENDO O R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Cap1.html">
+            
+                <a href="Cap1.html">
+            
+                    
+                    1.1. Instalando o R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Cap2.html">
+            
+                <a href="Cap2.html">
+            
+                    
+                    1.2. Primeiros passos com o R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cap3.html">
+            
+                <a href="Cap3.html">
+            
+                    
+                    1.3. Manipulando tabelas de dados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Cap4.html">
+            
+                <a href="Cap4.html">
+            
+                    
+                    1.4. Investigando tabelas de dados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Cap5.html">
+            
+                <a href="Cap5.html">
+            
+                    
+                    2. MODELOS DE REGRESSÃO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Cap5.html">
+            
+                <a href="Cap5.html">
+            
+                    
+                    2.1. O básico sobre regressão
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Cap6.html">
+            
+                <a href="Cap6.html">
+            
+                    
+                    2.2. Fatores aleatórios e modelos mistos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Cap7.html">
+            
+                <a href="Cap7.html">
+            
+                    
+                    2.3. Checando os pressupostos do modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Cap8.html">
+            
+                <a href="Cap8.html">
+            
+                    
+                    2.4. Reportando seu modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Cap9.html">
+            
+                <a href="Cap9.html">
+            
+                    
+                    3. MODELOS COM DUAS VARIÁVEIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Cap9.html">
+            
+                <a href="Cap9.html">
+            
+                    
+                    3.1. Modelo com duas variáveis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Cap10.html">
+            
+                <a href="Cap10.html">
+            
+                    
+                    3.2. Diagnósticos do modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="Cap11.html">
+            
+                <a href="Cap11.html">
+            
+                    
+                    3.3. Investigando os efeitos aleatórios
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >3.3. Investigando os efeitos aleatórios</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="investigando-os-efeitos-aleat&#xF3;rios">Investigando os efeitos aleat&#xF3;rios</h1>
+<p>At&#xE9; agora, trabalhamos com um modelo cuja estrutura de efeitos aleat&#xF3;rios era:</p>
+<pre><code># (1|suj)+(1|itens)
+</code></pre><p>Ou seja, <code>intercepto</code> para sujeitos e para itens. O que estamos investigando com isso? Estamos dizendo que o modelo calculou a m&#xE9;dia de cada sujeito e a m&#xE9;dia de cada item e as considerou na an&#xE1;lise.</p>
+<p>{inserir gr&#xE1;fico aqui!}</p>
+<p>Mas vamos investigar nosso design experimental e averiguar se isso &#xE9; o bastante. Primeiro, a estrutura dos sujeitos:</p>
+<p>Vamos fazer um <code>subset</code> com um sujeito aleat&#xF3;rio do nossa tabela p7, digamos o sujeito 13:</p>
+<pre><code>suj13=subset(p7, p7$suj==13)
+suj13
+nrow(suj13)
+</code></pre><p>Para esse sujeito, temos 16 observa&#xE7;&#xF5;es, 4 para cada condi&#xE7;&#xE3;o. Isso significa que o mesmo sujeito estava exposto a todos os n&#xED;veis de cada fator. Observe, ent&#xE3;o, que a m&#xE9;dia global desse sujeito...</p>
+<pre><code>mean(suj13$rt)
+</code></pre><p>...n&#xE3;o &#xE9; suficiente para descrever a sua variabilidade, visto que ele pode ser mais lento em uma condi&#xE7;&#xE3;o e mais r&#xE1;pido em outra:</p>
+<pre><code>tapply(suj13$rt, list(suj13$ant, suj13$verbo), mean)
+</code></pre><p>Observe que isso &#xE9; bem verdade. Em m&#xE9;dia, esse sujeito tem um tempo de rea&#xE7;&#xE3;o de 1367.6ms, mas esse valor parece ter sido &quot;puxado&quot; pela condi&#xE7;&#xE3;o <code>pp.pl</code> (1772.5). Isso significa que ter&#xED;amos que considerar n&#xE3;o apenas um intercepto para os sujeitos, mas tamb&#xE9;m um <em>slope</em> (uma inclina&#xE7;&#xE3;o) para cada um dos fatores do nosso experimento.</p>
+<pre><code>require(lattice)
+qqmath(~rt|suj, data=p7)
+</code></pre><p>Em segundo lugar, vamos olhar para os itens: Vamos fazer um <code>subset</code>, digamos, do item D:</p>
+<pre><code>itemD=subset(p7, p7$itens==&quot;D&quot;)
+itemD
+nrow(itemD)
+</code></pre><p>Observe que temos 32 observa&#xE7;&#xF5;es para o item D, uma para cada sujeito. Repare, tamb&#xE9;m, que o item D aplicava-se apenas a um tipo de antecedente (np) e a um tipo de verbo (pl).</p>
+<p>Observe que, no caso dos itens desse experimento, n&#xE3;o faz sentido dizer que h&#xE1; tempos diferentes para cada item em cada condi&#xE7;&#xE3;o, porque um item s&#xF3; pode aparecer em uma condi&#xE7;&#xE3;o. Logo, n&#xE3;o s&#xE3;o necess&#xE1;rios <em>slopes</em> para itens nesse modelo.</p>
+<pre><code>qqmath(~rt|itens, data=p7)
+</code></pre><p>Mas lembre-se que um certo item pode ser lido mais rapidamente ou mais lentamente do que outro. Logo, o intercepto para os itens ainda faz sentido.</p>
+<pre><code>tapply(p7$rt, p7$itens, mean)
+</code></pre><p>Apenas para fins did&#xE1;ticos, vamos come&#xE7;ar mexendo na estrutura dos itens. Vamos ajustar um modelo com intercepto para itens e slopes com intera&#xE7;&#xE3;o entre ant e verbo para itens:</p>
+<pre><code>mod.itens=lmer(log(rt)~ant*verbo+(1|suj)+(1+ant*verbo|itens), data=corte)
+</code></pre><p>Voc&#xEA; provavelmente recebeu essa informa&#xE7;&#xE3;o:</p>
+<pre><code># boundary (singular) fit: see ?isSingular
+</code></pre><p>N&#xF3;s j&#xE1; falamos antes sobre essa mensagem, que indica que o seu modelo foi sobreajustado quanto &#xE0; estrutura de efeitos aleat&#xF3;rios. Isso n&#xE3;o significa que ele n&#xE3;o foi feito. Se voc&#xEA; quiser, pode v&#xEA;-lo:</p>
+<pre><code>summary(mod.itens)
+</code></pre><p>Observe que, agora, n&#xF3;s temos uma tabela de correla&#xE7;&#xE3;o junta aos efeitos aleat&#xF3;rios. O que fazer nesse momento? Ficar com esse modelo? Fazer outro? Vamos investigar a fun&#xE7;&#xE3;o isSingular():</p>
+<pre><code>?isSingular
+</code></pre><p>Voc&#xEA; n&#xE3;o precisa entender o que est&#xE1; a&#xED; em detalhes, mas h&#xE1; uma parte em &quot;details&quot; que diz assim:</p>
+<pre><code># &quot;There is not yet consensus about how to deal with singularity...&quot;
+</code></pre><p>E v&#xE1;rias op&#xE7;&#xF5;es sobre o que fazer. Vamos seguir o terceiro item da lista:</p>
+<ul>
+<li>&quot;Keep it maximal&quot; (o texto citado a&#xED; est&#xE1; na pasta do curso e j&#xE1; foi recomendado aqui).</li>
+</ul>
+<p>Ou seja, vamos tentar a mais complexa estrutura dos efeitos aleat&#xF3;rios que conseguirmos. Com a intera&#xE7;&#xE3;o vimos que n&#xE3;o d&#xE1;. E sem ela?</p>
+<pre><code>mod.itens=lmer(log(rt)~ant*verbo+(1|suj)+(1+ant+verbo|itens), data=corte)
+</code></pre><p>Tamb&#xE9;m n&#xE3;o. E com slopes s&#xF3; para ant?</p>
+<pre><code>mod.itens=lmer(log(rt)~ant*verbo+(1|suj)+(1+ant|itens), data=corte)
+</code></pre><p>Tamb&#xE9;m n&#xE3;o. E com slopes para verbo?</p>
+<pre><code>mod.itens=lmer(log(rt)~ant*verbo+(1|suj)+(1+verbo|itens), data=corte)
+</code></pre><p>Tamb&#xE9;m n&#xE3;o!</p>
+<p>Ent&#xE3;o descobrimos algo (que j&#xE1; sab&#xED;amos, na verdade, porque nosso design
+nos dizia isso): devemos ter apenas intercepto para itens:</p>
+<pre><code>mod.itens=lmer(log(rt)~ant*verbo+(1|suj)+(1|itens), data=corte)
+</code></pre><p>Agora vamos fazer a mesma coisa para os sujeitos. Primeiro, com intera&#xE7;&#xE3;o:</p>
+<pre><code>mod.suj=lmer(log(rt)~ant*verbo+(1+ant*verbo|suj)+(1|itens), data=corte)
+</code></pre><p>N&#xE3;o funcionou! Ent&#xE3;o, sem intera&#xE7;&#xE3;o:</p>
+<pre><code>mod.suj=lmer(log(rt)~ant*verbo+(1+ant+verbo|suj)+(1|itens), data=corte)
+</code></pre><p>Tamb&#xE9;m n&#xE3;o funcionou! Com slopes para ant:</p>
+<pre><code>mod.suj=lmer(log(rt)~ant*verbo+(1+ant|suj)+(1|itens), data=corte)
+</code></pre><p>Tamb&#xE9;m n&#xE3;o! Com slopes para verbo:</p>
+<pre><code>mod.suj=lmer(log(rt)~ant*verbo+(1+verbo|suj)+(1|itens), data=corte)
+</code></pre><p>Tamb&#xE9;m n&#xE3;o. Logo, a estrutura m&#xE1;xima de efeitos aleat&#xF3;rios que conseguimos ajustar foi com interceptos para sujeitos e itens. Podemos, ent&#xE3;o, ficar com esse modelo final:</p>
+<pre><code>mod.final=lmer(log(rt)~ant*verbo+(1|suj)+(1|itens), data=corte)
+</code></pre><p>Se quisermos reportar o p-valor, temos que instalar o pacote &quot;afex&quot;:</p>
+<pre><code>install.packages(&quot;afex&quot;)
+require(afex)
+</code></pre><p>E rodar mais uma vez o modelo:</p>
+<pre><code>mod.final=lmer(log(rt)~ant*verbo+(1|suj)+(1|itens), data=corte)
+summary(mod.final)
+</code></pre><p>Observe que temos um efeito significativo da intera&#xE7;&#xE3;o, que voc&#xEA; j&#xE1; sabe o que significa. Lembre-se do <code>interaction.plot()</code>:</p>
+<pre><code>interaction.plot(corte$ant, corte$verbo, corte$rt, mean)
+</code></pre><p>Apenas um coment&#xE1;rio: plot agora a intera&#xE7;&#xE3;o com log(rt) em vez de rt:</p>
+<pre><code>interaction.plot(corte$ant, corte$verbo, log(corte$rt), mean)
+</code></pre><p>Pense um pouco sobre isso! Vamos plotar tamb&#xE9;m nossa tabela de m&#xE9;dias para os dados finais:</p>
+<pre><code>tapply(corte$rt, list(corte$ant, corte$verbo), mean)
+</code></pre><p>E reportar nossos achados:</p>
+<blockquote>
+<p>Ajustou-se um modelo linear de efeitos mistos, com tipo de antecedente e n&#xFA;mero do verbo como efeitos fixos; intercepto para sujeitos e itens como efeitos aleat&#xF3;rios (a m&#xE1;xima estrutura de efeitos aleat&#xF3;rios antes de o modelo alcan&#xE7;ar singularidade - Barr et. al, 2013). Apenas a intera&#xE7;&#xE3;o pp x sg mostrou-se significativa (pp x sg=-0.24 logRTs, t=-3.213, p=0.007). P-valor obtido com o pacote &quot;afex&quot;. O modelo mostrou que, na condi&#xE7;&#xE3;o np.sg os tempos de rea&#xE7;&#xE3;o s&#xE3;o muito mais lentos (791.95 ms) do que quando na condi&#xE7;&#xE3;o pp.sg (609.56 ms), uma diferen&#xE7;a de 172.39 ms.</p>
+</blockquote>
+<p>Se quiser, para acompanhar seus dados, voc&#xEA; pode acrescentar um gr&#xE1;fico com a intera&#xE7;&#xE3;o (que seja digno de se publicar):</p>
+<pre><code>require(dplyr)
+require(ggplot2)
+</code></pre><p>E criar um gr&#xE1;fico bonitinho:</p>
+<pre><code>corte%&gt;%
+  ggplot() +
+  aes(x = ant, y = rt, color = verbo, group = verbo) +
+  stat_summary(fun.y = mean, geom = &quot;point&quot;) +
+  stat_summary(fun.y = mean, geom = &quot;line&quot;) +
+  stat_summary(fun.data = mean_cl_normal, geom = &quot;errorbar&quot;,
+               fun.args = list(mult = 1), width=0.05)+
+  theme_classic()+
+  xlab(&quot;Tipo de Antecedente&quot;) +
+  ylab(&quot;Tempos de rea&#xE7;&#xE3;o (ms)&quot;) +
+  ggtitle(&quot;Efeito significativo de intera&#xE7;&#xE3;o&quot;,
+          subtitle = &quot;entre tipo de antecedente e n&#xFA;mero do verbo&quot;)
+</code></pre><p>Que voc&#xEA; pode salvar em formato .png:</p>
+<pre><code>ggsave(&quot;Meu gr&#xE1;fico bonitinho.png&quot;)
+</code></pre><p>Agora que voc&#xEA; tem um resultado, precisa explicar isso em termos te&#xF3;ricos. O que esse resultado significa para o fen&#xF4;meno que voc&#xEA; est&#xE1; estudando?</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Cap10.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 3.2. Diagnósticos do modelo">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.3. Investigando os efeitos aleatórios","level":"1.15","depth":1,"previous":{"title":"3.2. Diagnósticos do modelo","level":"1.14","depth":1,"path":"Cap10.md","ref":"Cap10.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Cap11.md","mtime":"2020-08-25T20:20:40.982Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-28T15:07:46.013Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

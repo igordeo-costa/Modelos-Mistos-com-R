@@ -1,0 +1,464 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.4. Investigando tabelas de dados · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Cap5.html" />
+    
+    
+    <link rel="prev" href="Cap3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Apresentação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Cap1.html">
+            
+                <a href="Cap1.html">
+            
+                    
+                    1. CONHECENDO O R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Cap1.html">
+            
+                <a href="Cap1.html">
+            
+                    
+                    1.1. Instalando o R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Cap2.html">
+            
+                <a href="Cap2.html">
+            
+                    
+                    1.2. Primeiros passos com o R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cap3.html">
+            
+                <a href="Cap3.html">
+            
+                    
+                    1.3. Manipulando tabelas de dados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="Cap4.html">
+            
+                <a href="Cap4.html">
+            
+                    
+                    1.4. Investigando tabelas de dados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Cap5.html">
+            
+                <a href="Cap5.html">
+            
+                    
+                    2. MODELOS DE REGRESSÃO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Cap5.html">
+            
+                <a href="Cap5.html">
+            
+                    
+                    2.1. O básico sobre regressão
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Cap6.html">
+            
+                <a href="Cap6.html">
+            
+                    
+                    2.2. Fatores aleatórios e modelos mistos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Cap7.html">
+            
+                <a href="Cap7.html">
+            
+                    
+                    2.3. Checando os pressupostos do modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Cap8.html">
+            
+                <a href="Cap8.html">
+            
+                    
+                    2.4. Reportando seu modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Cap9.html">
+            
+                <a href="Cap9.html">
+            
+                    
+                    3. MODELOS COM DUAS VARIÁVEIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Cap9.html">
+            
+                <a href="Cap9.html">
+            
+                    
+                    3.1. Modelo com duas variáveis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Cap10.html">
+            
+                <a href="Cap10.html">
+            
+                    
+                    3.2. Diagnósticos do modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Cap11.html">
+            
+                <a href="Cap11.html">
+            
+                    
+                    3.3. Investigando os efeitos aleatórios
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >1.4. Investigando tabelas de dados</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="investigando-tabelas-de-dados">Investigando tabelas de dados</h1>
+<h2 id="sumarizando-dados-do-seu-data-frame">Sumarizando dados do seu data frame</h2>
+<p>Vamos continuar trabalhando com o objeto <code>x</code>, ou seja, com a tabela <code>Popula&#xE7;&#xF5;es Fict&#xED;cias.csv</code>. Se n&#xE3;o estiver carregada, carregue-a! Agora vamos investigar esses dados com a fun&#xE7;&#xE3;o <code>summary()</code>. Vamos come&#xE7;ar investigando a <code>popA</code>:</p>
+<pre><code>summary(x$popA)
+</code></pre><p>Lembre-se: data frame <code>x</code>, coluna <code>popA</code> &#xE9; o mesmo que: <code>x$popA</code>.</p>
+<p>Que informa&#xE7;&#xF5;es s&#xE3;o essas? Se olharmos com calma, elas s&#xE3;o (quase) auto-explicativas:</p>
+<ul>
+<li><code>Min</code> e <code>Max</code> s&#xE3;o o menor e o maior valor da <code>popA</code>;</li>
+<li><code>Mean</code> &#xE9; a m&#xE9;dia aritm&#xE9;tica da <code>popA</code>, ou seja, todos os valores de <code>popA</code> somados e divididos pelo n&#xFA;mero total de observa&#xE7;&#xF5;es (no caso, 10 mil). Podemos conferir isso usando as fun&#xE7;&#xF5;es:</li>
+</ul>
+<pre><code>min(x$popA)
+max(x$popA)
+mean(x$popA)
+</code></pre><p>Agora que voc&#xEA; j&#xE1; entendeu tudo isso, voc&#xEA; pode come&#xE7;ar a valorizar mais a fun&#xE7;&#xE3;o <code>summary()</code>. Ela te d&#xE1; os mais relevantes desses resultados de uma vez s&#xF3; e de modo muito r&#xE1;pido. Mas s&#xF3; fizemos <code>summary()</code> para a <code>popA</code>. Fa&#xE7;amos tamb&#xE9;m para <code>popB</code>:</p>
+<pre><code>summary(x$popB)
+</code></pre><p>Ou voc&#xEA; pode aplicar a fun&#xE7;&#xE3;o <code>summary()</code> a todo o data frame:</p>
+<pre><code>summary(x)
+</code></pre><p>Agora compare as popula&#xE7;&#xF5;es A e B. Vamos supor que os dados sejam de Tempos de Rea&#xE7;&#xE3;o &#xE0; leitura de certas palavras.</p>
+<ul>
+<li>Qual delas l&#xEA; mais r&#xE1;pido? Por qu&#xEA;?</li>
+<li>Qual delas tem tempos de leitura mais consistentes? Por qu&#xEA;?</li>
+</ul>
+<p>Voc&#xEA; tamb&#xE9;m pode visualizar os dados dos quartis e quantis com um <em>boxplot</em> (gr&#xE1;fico de caixas):</p>
+<pre><code>boxplot(x$popA, x$popB)
+</code></pre><p>O seu gr&#xE1;fico deve ter aparecido em uma janela pr&#xF3;pria para eles, chamada de <code>plots</code>. Se voc&#xEA; n&#xE3;o a estiver vendo, basta selecion&#xE1;-la no painel que cont&#xE9;m as abas <code>Files</code>, <code>Plots</code>, <code>Packages</code>, etc.</p>
+<p>Perceba como esse tipo de gr&#xE1;fico faz um resumo muito conciso e de apreens&#xE3;o imediata dos dados. Fique atento para o fato de que a fun&#xE7;&#xE3;o <code>boxplot()</code> pode ser aplicada, ainda, de outro modo. Vamos ver esse modo.</p>
+<p>Usemos a fun&#xE7;&#xE3;o <code>sample()</code> para fazer duas amostras aleat&#xF3;rias:</p>
+<pre><code>a.popA=sample(x$popA, 15) # amostrar aleatoriamente 15 indiv&#xED;duos de popA
+a.popB=sample(x$popB, 15) # o mesmo para popB.
+</code></pre><p>Agora vamos juntar em um &#xFA;nico vetor <code>a.popA</code> e <code>a.popB</code> usando a fun&#xE7;&#xE3;o concatenar <code>c()</code>:</p>
+<pre><code>am=c(a.popA, a.popB)
+</code></pre><p>Agora vamos criar um vetor (fun&#xE7;&#xE3;o concatenar) que contenha a letra &quot;A&quot; repetida 15 vezes e a letra &quot;B&quot; repetida 15 vezes. Vamos usar a fun&#xE7;&#xE3;o <code>rep()</code>. Fa&#xE7;a primeiro assim:</p>
+<pre><code>rep(&quot;A&quot;, 15)
+rep(&quot;B&quot;, 15)
+</code></pre><p>Viu o que essa fun&#xE7;&#xE3;o faz? Agora o que fizemos abaixo faz mais sentido para voc&#xEA;, n&#xE3;o?</p>
+<pre><code>pop=c(rep(&quot;A&quot;, 15), rep(&quot;B&quot;, 15))
+</code></pre><p>Agora vamos juntar em um data frame o vetor <code>pop</code> e o vetor <code>am</code>:</p>
+<pre><code>dados=data.frame(pop, am)
+</code></pre><p>Agora vamos ver o que o R fez:</p>
+<p>dados</p>
+<p>No data frame original (<code>x</code>), popula&#xE7;&#xE3;o A e B estavam em colunas diferentes, da&#xED; fizemos o <em>boxplot</em> assim:</p>
+<pre><code>boxplot(x$popA, x$popB)
+</code></pre><p>Agora as popula&#xE7;&#xF5;es A e B est&#xE3;o na mesma coluna e as medidas em outra coluna. Daqui a pouco vamos ver um jeito muito mais f&#xE1;cil de fazer isso, usando o pacote <code>tidyr</code>. Tente plotar um <em>boxplot</em> desse modo e veja o que ocorre:</p>
+<pre><code>boxplot(dados$pop, dados$am)
+</code></pre><p>Ele plotou 2 <em>boxplots</em>, mas um est&#xE1; &quot;zerado&quot;. O jeito correto de plotar o <em>boxplot</em> para esse data frame seria:</p>
+<pre><code>boxplot(dados$am~dados$pop)
+</code></pre><p>Avisar &#xE0; fun&#xE7;&#xE3;o <em>boxplot</em> que voc&#xEA; deseja plotar a coluna <code>am</code> (<code>$am</code>) em fun&#xE7;&#xE3;o da (<code>~</code>) coluna <code>pop</code> (<code>$pop</code>). Ou, se voc&#xEA; n&#xE3;o gosta do s&#xED;mbolo <code>$</code>, assim:</p>
+<pre><code>boxplot(am~pop, data=dados)
+</code></pre><p>Leia-se: plotar um boxplot de <code>am</code> em fun&#xE7;&#xE3;o de <code>pop</code>, colunas do <code>data.frame</code> de nome <code>dados</code>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Cap3.html" class="navigation navigation-prev " aria-label="Previous page: 1.3. Manipulando tabelas de dados">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Cap5.html" class="navigation navigation-next " aria-label="Next page: 2. MODELOS DE REGRESSÃO">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.4. Investigando tabelas de dados","level":"1.6","depth":1,"next":{"title":"2. MODELOS DE REGRESSÃO","level":"1.7","depth":1,"path":"Cap5.md","ref":"Cap5.md","articles":[]},"previous":{"title":"1.3. Manipulando tabelas de dados","level":"1.5","depth":1,"path":"Cap3.md","ref":"Cap3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Cap4.md","mtime":"2020-08-23T04:21:33.269Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-28T15:07:46.013Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,574 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.2. Fatores aleatórios e modelos mistos · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Cap7.html" />
+    
+    
+    <link rel="prev" href="Cap5.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Apresentação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Cap1.html">
+            
+                <a href="Cap1.html">
+            
+                    
+                    1. CONHECENDO O R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Cap1.html">
+            
+                <a href="Cap1.html">
+            
+                    
+                    1.1. Instalando o R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Cap2.html">
+            
+                <a href="Cap2.html">
+            
+                    
+                    1.2. Primeiros passos com o R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Cap3.html">
+            
+                <a href="Cap3.html">
+            
+                    
+                    1.3. Manipulando tabelas de dados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Cap4.html">
+            
+                <a href="Cap4.html">
+            
+                    
+                    1.4. Investigando tabelas de dados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Cap5.html">
+            
+                <a href="Cap5.html">
+            
+                    
+                    2. MODELOS DE REGRESSÃO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Cap5.html">
+            
+                <a href="Cap5.html">
+            
+                    
+                    2.1. O básico sobre regressão
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="Cap6.html">
+            
+                <a href="Cap6.html">
+            
+                    
+                    2.2. Fatores aleatórios e modelos mistos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Cap7.html">
+            
+                <a href="Cap7.html">
+            
+                    
+                    2.3. Checando os pressupostos do modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Cap8.html">
+            
+                <a href="Cap8.html">
+            
+                    
+                    2.4. Reportando seu modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Cap9.html">
+            
+                <a href="Cap9.html">
+            
+                    
+                    3. MODELOS COM DUAS VARIÁVEIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Cap9.html">
+            
+                <a href="Cap9.html">
+            
+                    
+                    3.1. Modelo com duas variáveis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Cap10.html">
+            
+                <a href="Cap10.html">
+            
+                    
+                    3.2. Diagnósticos do modelo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Cap11.html">
+            
+                <a href="Cap11.html">
+            
+                    
+                    3.3. Investigando os efeitos aleatórios
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >2.2. Fatores aleatórios e modelos mistos</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="fatores-aleat&#xF3;rios-e-modelos-mistos">Fatores aleat&#xF3;rios e modelos mistos</h1>
+<p> Se voc&#xEA; estava trabalhando na parte 2 da nossa aula, vamos retornar &#xE0; nossa
+ tabela original:</p>
+<pre><code>require(dplyr)
+long=select(long, -c(intercepto, coefs, residuos))
+</code></pre><p>Do contr&#xE1;rio, voc&#xEA; precisa da tabela <code>long</code> aqui de volta (in&#xED;cio da aula anterior). Agora n&#xF3;s j&#xE1; temos uma no&#xE7;&#xE3;o geral de como funcionam os modelos de regress&#xE3;o. Mas, se os valores estimados pelo modelo de regress&#xE3;o linear s&#xE3;o id&#xEA;nticos aos estimados pelo modelo MISTO de regress&#xE3;o linear. Por que precisamos de um modelo misto e o que &#xE9; um modelo misto? J&#xE1; dissemos que essa diferen&#xE7;a est&#xE1; na estrutura dos res&#xED;duos. Ent&#xE3;o vamos investigar esses dados:</p>
+<pre><code>summary(mod.misto)
+</code></pre><p>Vamos olhar especificamente para a parte dos res&#xED;duos:</p>
+<pre><code>#------------------------------------------------------------------------------
+ Scaled residuals:
+   Min       1Q        Median      3Q      Max
+   -2.3253   -0.4842   -0.1857     0.2140  6.2501
+#-------------------------------------------------------------------------------
+ Random effects:
+  Groups   Name        Variance Std.Dev.
+ Sujeitos (Intercept)  82880   287.89  
+ Itens    (Intercept)   2142    46.28  
+ Residual             158818   398.52  
+ Number of obs: 512, groups:  Sujeitos, 32; Itens, 16
+#------------------------------------------------------------------------------
+</code></pre><p>Em &quot;Scaled residuals&quot; temos os res&#xED;duos divididos em quartis:</p>
+<ul>
+<li>a mediana dos res&#xED;duos;</li>
+<li>o primeiro e o terceiro quartis.
+Mas isso n&#xE3;o nos interessa muito!</li>
+</ul>
+<p>Em &quot;Random effects&quot; temos os efeitos aleat&#xF3;rios. Observe que a&#xED; temos um intercepto para sujeitos e um para itens, mas tamb&#xE9;m um valor dos res&#xED;duos! Mas o que diabos isso significa?</p>
+<p>Vamos plotar os <code>boxplots</code> dos res&#xED;duos em fun&#xE7;&#xE3;o dos sujeitos:</p>
+<pre><code>par(mfrow=c(1,1))
+boxplot(residuals(mod.misto)~long$suj)
+</code></pre><p>Observe que alguns sujeitos s&#xE3;o lentos e que alguns s&#xE3;o r&#xE1;pidos. Alguns t&#xEA;m enorme vari&#xE2;ncia e alguns s&#xE3;o muito consistentes. O mesmo vale para os itens, mas em menor intensidade, nesse caso:</p>
+<pre><code>boxplot(residuals(mod.misto)~long$itens)
+</code></pre><p> Se voc&#xEA; quiser, pode ver a variabilidade dos itens por condi&#xE7;&#xE3;o:</p>
+<pre><code>boxplot(residuals(mod.misto)~long$itens+long$cond)
+</code></pre><p>Alguns levam a maior tempo para primeira fixa&#xE7;&#xE3;o, alguns para menor. Apenas lembrando: se voc&#xEA; n&#xE3;o gosta do s&#xED;mbolo <code>$</code>, pode usar tamb&#xE9;m:</p>
+<pre><code>boxplot(residuals(mod.misto)~itens, data=long)
+</code></pre><p>Agora pare para pensar uma coisa. Olhe com carinho para os boxplots dos sujeitos. Alguns s&#xE3;o r&#xE1;pidos, alguns lentos, alguns variam muito, outros pouco. Como eu posso dizer que essa varia&#xE7;&#xE3;o toda n&#xE3;o afeta meu resultado? Em outras palavras, ao fazer seu experimento, voc&#xEA; seleciona, aleatoriamente, ALGUNS indiv&#xED;duos da popula&#xE7;&#xE3;o, mas n&#xE3;o todos. Como voc&#xEA; poder&#xE1; fazer uma infer&#xEA;ncia para toda uma popula&#xE7;&#xE3;o com isso?</p>
+<p>Essa &#xE9; a ideia por tr&#xE1;s de um fator aleat&#xF3;rio: Um fator fixo &#xE9; um fator escolhido/determinado pelo pesquisador. No entanto, h&#xE1; fontes de varia&#xE7;&#xE3;o dos dados que s&#xE3;o escolhidas aleatoriamente pelo pesquisador. Essa varia&#xE7;&#xE3;o incontrolada precisa ser inclu&#xED;da no modelo.</p>
+<p>Mas a&#xED; voc&#xEA; ir&#xE1; dizer: isso j&#xE1; n&#xE3;o &#xE9; o fator de Erro? Sim, mas se essa varia&#xE7;&#xE3;o incontrolada for consistente de algum modo? Se ela o for, podemos mensur&#xE1;-la e controlar ainda mais os nossos res&#xED;duos. Compare com o modelo simples que fizemos anteriormente. Nele, a f&#xF3;rmula da equa&#xE7;&#xE3;o era:</p>
+<pre><code># y=(a*x)+b+Erro
+</code></pre><p>Ou seja, um valor qualquer de <code>y</code> era fun&#xE7;&#xE3;o de:</p>
+<ul>
+<li>a = influ&#xEA;ncia em <code>y</code> do fator fixo;</li>
+<li>b = o intercepto (influ&#xEA;ncia em <code>y</code> comum a todos);</li>
+<li>Erro = os res&#xED;duos.</li>
+</ul>
+<p>No modelo misto temos:</p>
+<pre><code># y=(a*fixo)+(c*aleat&#xF3;rio)+b+Erro
+</code></pre><p>Agora estamos dizendo que um valor qualquer de y &#xE9; fun&#xE7;&#xE3;o de:</p>
+<ul>
+<li>b = o intercepto</li>
+<li>Erro = os res&#xED;duos</li>
+<li>fatores fixos</li>
+<li>fatores aleat&#xF3;rios</li>
+<li>a = influ&#xEA;ncia em y do fator fixo</li>
+<li>c = influ&#xEA;ncia em y do fator aleat&#xF3;rio</li>
+</ul>
+<p>Vamos ent&#xE3;o investigar esses fatores (fixos e aleat&#xF3;rios). Para investigar os modelos mistos, vamos usar tr&#xEA;s fun&#xE7;&#xF5;es:</p>
+<pre><code>fixef()
+ranef()
+coef()  # n&#xE3;o vamos discutir essa fun&#xE7;&#xE3;o por agora
+</code></pre><p>A primeira &#xE9; a mais f&#xE1;cil:</p>
+<pre><code>fixef(mod.misto)
+</code></pre><p>Ela simplesmente retorna os par&#xE2;metros estimados para os fatores fixos. Ela funciona como a fun&#xE7;&#xE3;o <code>coefficients()</code> ou <code>coef()</code> para o modelo <code>lm()</code>. Nesse caso, a condi&#xE7;&#xE3;o no intercepto (mult) foi estimada em 2.022 ms. E a condi&#xE7;&#xE3;o contrastada com ela (sing) aumenta o tempo em 1.281 ms.</p>
+<pre><code>contrasts(long$cond)
+</code></pre><p>Mostra que <code>mult</code> foi modelada no intrercepto e <code>sing</code> &#xE9; a contrastada.
+Lembre-se de que a condi&#xE7;&#xE3;o <code>sing</code> nem sempre &#xE9; id&#xEA;ntica &#xE0; m&#xE9;dia do grupo, visto que os modelos mistos estimam esse par&#xE2;metro n&#xE3;o com o m&#xE9;todo OLS (<em>Ordinary Least Square</em>), mas sim com o m&#xE9;todo dos REML (<em>Restricted Maximum Likelihood</em>).</p>
+<pre><code>aggregate(long$tempo, by=list(long$cond), mean)
+</code></pre><p>Vamos juntar &#xE0; tabela <code>long</code> o valor do intercepto:</p>
+<pre><code>long$intercepto=rep(2.022, length(long))
+</code></pre><p>Isso &#xE9; o mesmo que dizer que <code>mult</code> acrescenta <code>0 ms</code> ao tempo e <code>sing</code> acrescenta <code>1.267 ms</code>. Vamos juntar esse valor &#xE0; nossa tabela <code>long</code>:</p>
+<pre><code>require(dplyr)  # se ainda n&#xE3;o o tiver feito
+long=mutate(long, fixos=if_else(long$cond==&quot;mult&quot;, 0, 1.267))
+</code></pre><p>Essa sintaxe est&#xE1; basicamente dizendo o seguinte: se o valor da coluna <code>cond</code> for <code>mult</code>, escreva <code>0</code>. Do contr&#xE1;rio, escreva <code>1.267</code>. Veja o que ocorreu com sua tabela:</p>
+<pre><code>head(long)
+tail(long)
+</code></pre><p>Agora vamos investigar as outras fun&#xE7;&#xF5;es: <code>coef()</code> e <code>ranef()</code>:</p>
+<pre><code>ranef(mod.misto)
+</code></pre><p>Primeiro, observe que <code>ranef()</code> apresenta dois subconjuntos de dados: <code>$suj</code> e <code>$itens</code>. Isso ocorre porque t&#xED;nhamos dois efeitos aleat&#xF3;rios (<em>random effects</em>). Se quiser, voc&#xEA; pode acess&#xE1;-los separadamente com:</p>
+<pre><code>ranef(mod.misto)$suj
+ranef(mod.misto)$itens
+</code></pre><p>Mas o que essa fun&#xE7;&#xE3;o est&#xE1; mostrando? No nosso modelo, cuja f&#xF3;rmula dos efeitos aleat&#xF3;rios era:</p>
+<pre><code>(1|suj) + (1|itens)
+</code></pre><p>N&#xF3;s pedimos para o modelo ajustar um intercepto para os sujeitos e um intercepto para os itens: esse &quot;1&quot; na f&#xF3;rmula significa &quot;intercepto&quot;. Logo, para cada sujeito, o modelo calculou um intercepto diferente baseado nas observa&#xE7;&#xF5;es desse sujeito em particular. O mesmo para os itens.</p>
+<p>Compare o gr&#xE1;fico de caixas para os itens:</p>
+<pre><code>boxplot(tempo~itens, data=long)
+</code></pre><p>Com os valores estimados pelo modelo para os itens:</p>
+<pre><code>ranef(mod.misto)$itens
+</code></pre><p>Basicamente, o que ranef est&#xE1; nos mostrando &#xE9; como cada indiv&#xED;duo/item particular difere da m&#xE9;dia populacional.</p>
+<p>Como ele faz isso? Essa &#xE9; uma matem&#xE1;tica complexa, mas os modelos lineares usam um neg&#xF3;cio chamado <em>BLUPs: best linear unbiased predictors</em>. Voc&#xEA; pode ler Baayen, Davidson &amp; Bates (2008) para saber mais. Vamos tentar entender isso de outra forma: No caso, fazendo uma tabela como fizemos para a regress&#xE3;o simples.</p>
+<p>Primeiro, vamos acrescentar os efeitos aleat&#xF3;rios dos sujeitos &#xE0; nossa tabela:</p>
+<p>OBS: De verdade, voc&#xEA; n&#xE3;o precisa entender o que est&#xE1; acontecendo aqui. Se quiser, pode rodar isso e pular para a parte em que discutimos a tabela j&#xE1; pronta! (At&#xE9; porque certamente h&#xE1; um jeito mais f&#xE1;cil e r&#xE1;pido de fazer isso com os pacotes <code>dplyr</code> e <code>tydir</code>, mas esse foi o que me ocorreu quando estava montando esse material, ent&#xE3;o vou deix&#xE1;-lo a&#xED; como est&#xE1;.)</p>
+<pre><code>#-------------------------------------------------------------------------------
+ranef.suj=as.data.frame(ranef(mod.misto))  # recupera os dados dos efeitos aleat&#xF3;rios em um data frame
+ranef.suj=ranef.suj[1:34,]  # pega apenas os dados dos sujeitos e ignora os itens
+ranef.suj=select(ranef.suj, c(grp, condval))  # seleciona apenas as colunas grp e condval
+ranef.suj$condval=round(ranef.suj$condval, 3)  # arredonda a coluna condval para 3 casas decimais
+colnames(ranef.suj)[2] &lt;- &quot;ranef.suj&quot;  # renomeia a coluna &quot;condval&quot; para &quot;ranef.suj
+long=inner_join(long, ranef.suj, by=c(&quot;suj&quot;=&quot;grp&quot;))  # junta o data frame ranef.suj a long baseado
+ na coluna &quot;suj&quot; e &quot;grp&quot;
+
+# E tamb&#xE9;m os efeitos aleat&#xF3;rios dos itens:
+
+itens=as.factor(c(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;))
+ranef.itens=ranef(mod.misto)$itens[1:4,]  # acessa os efeitos aleat&#xF3;rios dos itens
+z=data.frame(itens, ranef.itens)  # cria um data frame com esses dados
+z$ranef.itens=round(z$ranef.itens, 3)  # arredonda a coluna para 3 casas decimais
+long=inner_join(long, z, by=c(&quot;itens&quot;))  # junta o data frame y a long baseado na coluna &quot;itens&quot;
+
+long$residuos=round(residuals(mod.misto), 3) # Acrescenta os res&#xED;duos
+long$suj=as.factor(long$suj) # Retorna o fator suj de character para factor
+#-------------------------------------------------------------------------------
+</code></pre><p>Pronto, agora voc&#xEA; j&#xE1; pode voltar para a discuss&#xE3;o te&#xF3;rica! Observe o topo e o final da nossa tabela:</p>
+<pre><code>head(long, 3)
+tail(long, 3)
+</code></pre><p>Vamos considerar o sujeito 1: seu tempo observado foi de <code>1.17 ms</code>. Repare que esse valor &#xE9; justamente a soma do restante da tabela:</p>
+<pre><code>2.022+0+0.199+(-0.849)+(-0.202)
+</code></pre><p>Em outras palavras, o modelo decomp&#xF4;s esse tempo em:</p>
+<ul>
+<li>um intercepto, igual para todos, de <code>2.022 ms</code>;</li>
+<li>o efeito fixo da condi&#xE7;&#xE3;o <code>mult: 0 ms</code> (modelada no intercepto);</li>
+<li>o efeito aleat&#xF3;rio do sujeito: <code>-0.060 ms</code> (esse &#xE9; um sujeito mais r&#xE1;pido do que a m&#xE9;dia populacional);</li>
+<li>um efeito aleat&#xF3;rio de item: <code>1.665 ms</code> (esse &#xE9; um item que leva a maiores tempos para primeira fixa&#xE7;&#xE3;o do que a m&#xE9;dia dos itens da popula&#xE7;&#xE3;o);</li>
+<li>e o efeito inexplicado que ficou nos res&#xED;duos: <code>0.643 ms</code>.</li>
+</ul>
+<p>Voc&#xEA; pode fazer a mesma coisa para qualquer sujeito e item da tabela. Digamos, o da linha 92:</p>
+<pre><code>long[92,]
+</code></pre><p>Vamos lembrar da regress&#xE3;o simples gerada com <code>lm()</code>. Nela, o tempo estimado era fun&#xE7;&#xE3;o apenas:</p>
+<ul>
+<li>do intercepto;</li>
+<li>dos valores ajustados; e</li>
+<li>dos res&#xED;duos.</li>
+</ul>
+<p>Aqui, o tempo estimado &#xE9; fun&#xE7;&#xE3;o:</p>
+<ul>
+<li>do intercepto;</li>
+<li>dos valores ajustados para os fatores fixos;</li>
+<li>dos fatores ajustados para os efeitos aleat&#xF3;rios; e</li>
+<li>dos res&#xED;duos.</li>
+</ul>
+<p>Como as estimativas dos modelos s&#xE3;o id&#xEA;nticas (ou quase), podemos dizer, ent&#xE3;o, que o modelo misto decomp&#xF5;e os res&#xED;duos em outros elementos (os fatores aleat&#xF3;rios), sendo, desse modo, um modelo mais preciso.</p>
+<p>Mas, afinal, por que analisar os dados com o modelo misto e n&#xE3;o com uma ANOVA?</p>
+<ul>
+<li>lembre-se, ANOVA te d&#xE1; que as m&#xE9;dias s&#xE3;o diferentes, mas n&#xE3;o o quanto, algo que o modelo de regress&#xE3;o, misto ou n&#xE3;o, te d&#xE1;;</li>
+<li>o modelo misto considera a variabilidade entre sujeitos e itens e reduz o fator de Erro, ou melhor, controla com mais precis&#xE3;o o fator de erro;</li>
+<li>ANOVAs levam a um p-valor inflado quando n&#xE3;o se controla a variabilidade de sujeitos e itens, gerando efeitos significativos quando eles n&#xE3;o existem! Isso n&#xE3;o significa que as ANOVAs sejam modelos ruins. Elas apenas s&#xE3;o modelos inadequados para o design experimental t&#xED;pico dos dados psicolingu&#xED;sticos (com sujeitos e itens como fatores aleat&#xF3;rios).</li>
+</ul>
+<p>Uma dica: Raijmakers (2003) faz uma breve discuss&#xE3;o sobre modelos contrabalanceados para os itens: nesse tipo de desenho experimental voc&#xEA; pode usar ANOVAs normalmente. Sugerimos a leitura aos interessados.</p>
+<p>Se voc&#xEA; quiser saber mais detalhes sobre por que n&#xE3;o usar ANOVAs, recomendamos:</p>
+<ul>
+<li>Baayen, Davidson &amp; Bates (2008: 399): <em>key advantages of mixed-effect modeling</em>. A partir da p.409 h&#xE1; um resumo dos motivos de se usar modelos mistos em psicolingu&#xED;stica.</li>
+<li>Veja tamb&#xE9;m o artigo da professora <a href="https://mahayana.me/" target="_blank">Mahayana Godoy</a> (UFRN): <a href="https://revista.abralin.org/index.php/abralin/article/view/1388" target="_blank">Uma compara&#xE7;&#xE3;o entre ANOVA e modelos lineares mistos para an&#xE1;lise de dados de tempo de resposta</a>.</li>
+</ul>
+<p>Mas por que considerar sujeitos e itens como fatores aleat&#xF3;rios? Para essa pergunta, recomendados o trecho sobre estat&#xED;stica inferencial da apostila do curso.</p>
+<p>Um resumo: porque, do mesmo modo como escolhemos os sujeitos aleatoriamente da popula&#xE7;&#xE3;o, por que n&#xE3;o dizemos que tamb&#xE9;m escolhemos os itens? Certas frases, palavras, morfemas dentre todos os poss&#xED;veis morfemas da l&#xED;ngua?! Pois &#xE9; isso que disse Clark (1973), num artigo que se tornou cl&#xE1;ssico: <em>The language as a fixed-effect fallacy</em>.</p>
+<p>Uma recomenda&#xE7;&#xE3;o extra: Para saber por que usar modelos mistos generalizados e n&#xE3;o ANOVAS, veja:</p>
+<ul>
+<li>Jaeger (2008), sobretudo a partir da p.443 (<em>Additional advantages of mixed logit models</em>).</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Cap5.html" class="navigation navigation-prev " aria-label="Previous page: 2.1. O básico sobre regressão">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Cap7.html" class="navigation navigation-next " aria-label="Next page: 2.3. Checando os pressupostos do modelo">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.2. Fatores aleatórios e modelos mistos","level":"1.9","depth":1,"next":{"title":"2.3. Checando os pressupostos do modelo","level":"1.10","depth":1,"path":"Cap7.md","ref":"Cap7.md","articles":[]},"previous":{"title":"2.1. O básico sobre regressão","level":"1.8","depth":1,"path":"Cap5.md","ref":"Cap5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Cap6.md","mtime":"2020-08-23T15:09:46.932Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-28T15:07:46.013Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

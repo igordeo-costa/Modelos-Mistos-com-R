@@ -6,6 +6,14 @@ O curso buscava, em primeiro lugar, fornecer uma explicação sobre o funcioname
 
 Para a primeira tarefa, elaboramos uma apostila que discutia  as questões teóricas que fundamentam a substituição das ANOVAs pelos modelos mistos. Uma versão ampliada dessa apostila pode ser acessada [aqui](). Para a segunda parte, elaboramos este material, que disponibilizamos aqui com pequenas alterações.
 
+## Arquivos usados no curso
+Na pasta Arquivos [deste repositório]() você encontrará os três arquivos de dados (```.csv```) que serão usados no curso. São eles:
+- first fixation.csv
+- Populações Fictícias.csv
+- Relativas_P7.csv
+
+Tenha certeza de que os tem baixado em seu computador antes de começar.
+
 ## Ao final do curso você será capaz de:
 - entender o que é uma regressão linear e como ela pode te ajudar a entender um modelo misto;
 - compreender os motivos pelos quais os modelos mistos têm sido amplamente adotados na psicolinguística em substituição à ANOVA;

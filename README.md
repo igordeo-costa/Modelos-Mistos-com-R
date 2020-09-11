@@ -14,7 +14,7 @@ Na pasta Arquivos [deste repositório]() você encontrará os três arquivos de 
 
 Tenha certeza de que os tem baixado em seu computador antes de começar.
 
-## Ao final do curso você será capaz de:
+## Ao final do curso você será capaz de
 - entender o que é uma regressão linear e como ela pode te ajudar a entender um modelo misto;
 - compreender os motivos pelos quais os modelos mistos têm sido amplamente adotados na psicolinguística em substituição à ANOVA;
 - definir a estrutura de efeitos aleatórios de um modelo misto com base no seu design experimental;

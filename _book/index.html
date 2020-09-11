@@ -57,8 +57,6 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Cap1.html" />
-    
     
 
     </head>
@@ -100,14 +98,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="Cap1.html">
+        <li class="chapter " data-level="1.2" >
             
-                <a href="Cap1.html">
+                <span>
             
                     
-                    1. CONHECENDO O R
+                    CONHECENDO O R
             
-                </a>
+                </span>
             
 
             
@@ -165,14 +163,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="Cap5.html">
+        <li class="chapter " data-level="1.7" >
             
-                <a href="Cap5.html">
+                <span>
             
                     
-                    2. MODELOS DE REGRESSÃO
+                    MODELOS DE REGRESSÃO
             
-                </a>
+                </span>
             
 
             
@@ -230,14 +228,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="Cap9.html">
+        <li class="chapter " data-level="1.12" >
             
-                <a href="Cap9.html">
+                <span>
             
                     
-                    3. MODELOS COM DUAS VARIÁVEIS
+                    MODELOS COM DUAS VARIÁVEIS
             
-                </a>
+                </span>
             
 
             
@@ -328,7 +326,32 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="apresenta&#xE7;&#xE3;o">Apresenta&#xE7;&#xE3;o</h1>
-<p>[Depois escreverei alguma coisa interessante aqui.]</p>
+<p>O material dispon&#xED;vel aqui foi elaborado para um curso de ver&#xE3;o que ministrei para os membros do <a href="http://www.lapal.letras.puc-rio.br/" target="_blank">Laborat&#xF3;rio de Psicolingu&#xED;stica e Aquisi&#xE7;&#xE3;o da Linguagem - LAPAL/PUC-Rio</a>, em dezembro de 2019.</p>
+<p>O curso buscava, em primeiro lugar, fornecer uma explica&#xE7;&#xE3;o sobre o funcionamento dos modelos lineares mistos e sobre os motivos pelos quais tais modelos s&#xE3;o prefer&#xED;veis &#xE0; An&#xE1;lise de Vari&#xE2;ncia (ANOVA) para an&#xE1;lise de dados de experimentos em psicolingu&#xED;stica. Al&#xE9;m disso, tinha por objetivo mostrar como realizar tais an&#xE1;lises com o uso do <a href="https://www.r-project.org/" target="_blank">R</a>.</p>
+<p>Para a primeira tarefa, elaboramos uma apostila que discutia  as quest&#xF5;es te&#xF3;ricas que fundamentam a substitui&#xE7;&#xE3;o das ANOVAs pelos modelos mistos. Uma vers&#xE3;o ampliada dessa apostila pode ser acessada <a href="">aqui</a>. Para a segunda parte, elaboramos este material, que disponibilizamos aqui com pequenas altera&#xE7;&#xF5;es.</p>
+<h2 id="arquivos-usados-no-curso">Arquivos usados no curso</h2>
+<p>Na pasta Arquivos <a href="">deste reposit&#xF3;rio</a> voc&#xEA; encontrar&#xE1; os tr&#xEA;s arquivos de dados (<code>.csv</code>) que ser&#xE3;o usados no curso. S&#xE3;o eles:</p>
+<ul>
+<li>first fixation.csv</li>
+<li>Popula&#xE7;&#xF5;es Fict&#xED;cias.csv</li>
+<li>Relativas_P7.csv</li>
+</ul>
+<p>Tenha certeza de que os tem baixado em seu computador antes de come&#xE7;ar.</p>
+<h2 id="ao-final-do-curso-voc&#xEA;-ser&#xE1;-capaz-de">Ao final do curso voc&#xEA; ser&#xE1; capaz de</h2>
+<ul>
+<li>entender o que &#xE9; uma regress&#xE3;o linear e como ela pode te ajudar a entender um modelo misto;</li>
+<li>compreender os motivos pelos quais os modelos mistos t&#xEA;m sido amplamente adotados na psicolingu&#xED;stica em substitui&#xE7;&#xE3;o &#xE0; ANOVA;</li>
+<li>definir a estrutura de efeitos aleat&#xF3;rios de um modelo misto com base no seu design experimental;</li>
+<li>entender o que s&#xE3;o interceptos e slopes (fixos e aleat&#xF3;rios);</li>
+<li>aplicar um modelo linear misto aos seus dados;</li>
+<li>ser capaz de ler o output do R no que diz respeito aos modelos mistos mais b&#xE1;sicos;</li>
+<li>ser capaz de realizar o diagn&#xF3;stico dos modelos mistos quanto &#xE0; normalidade, linearidade e homoscedasticidade;</li>
+<li>saber aplicar uma transforma&#xE7;&#xE3;o logar&#xED;tmica a seus dados;</li>
+<li>saber reportar os resultados de um modelo linear misto.</li>
+<li>aplicar um modelo misto a um design que contenha dois fatores fixos;</li>
+<li>compreender o que &#xE9; uma intera&#xE7;&#xE3;o entre fatores;</li>
+<li>entender a l&#xF3;gica por tr&#xE1;s dos contrastes b&#xE1;sicos dos modelos mistos (<em>dummy code</em>).</li>
+</ul>
 
                                 
                                 </section>
@@ -357,10 +380,6 @@
             
                 
                 
-                <a href="Cap1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 1. CONHECENDO O R">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
             
         
     </div>
@@ -368,7 +387,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Apresentação","level":"1.1","depth":1,"next":{"title":"1. CONHECENDO O R","level":"1.2","depth":1,"path":"Cap1.md","ref":"Cap1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-08-23T04:16:27.875Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-28T16:44:16.220Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Apresentação","level":"1.1","depth":1,"next":{"title":"CONHECENDO O R","level":"1.2","depth":1,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-08-28T17:14:40.189Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-11T01:31:47.409Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
